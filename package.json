@@ -8,6 +8,6 @@
     "start": "koishi"
   },
   "dependencies": {
-    "koishi": "^1.7.0"
+    "koishi": "^1.8.1"
   }
 }
