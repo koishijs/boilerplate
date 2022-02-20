@@ -5,9 +5,13 @@
   "main": "index.js",
   "license": "MIT",
   "workspaces": [
-    "packages/*"
+    "plugins/*"
   ],
   "scripts": {
+    "build": "koishi-scripts build",
+    "bump": "koishi-scripts bump",
+    "init": "koishi-scripts init",
+    "pub": "koishi-scripts pub",
     "start": "koishi start -r esbuild-register"
   },
   "devDependencies": {
@@ -26,6 +30,7 @@
     "@koishijs/plugin-logger": "^1.2.1",
     "@koishijs/plugin-manager": "^1.5.2",
     "@koishijs/plugin-status": "^5.3.1",
+    "@koishijs/scripts": "^1.0.0",
     "koishi": "^4.2.2"
   }
 }

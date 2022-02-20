@@ -1,12 +1,14 @@
-yarn.lock
-config.ts
-node_modules/
+lib
+dist
+accounts
+
+node_modules
 npm-debug.log
 yarn-debug.log
 yarn-error.log
-package-lock.json
 tsconfig.tsbuildinfo
 
+.env
 .eslintcache
 .DS_Store
 .idea
