@@ -12,10 +12,11 @@
     "bump": "koishi-scripts bump",
     "init": "koishi-scripts init",
     "pub": "koishi-scripts pub",
-    "dev": "koishi start -r esbuild-register -r tsconfig-paths --watch",
+    "dev": "cross-env NODE_ENV=development koishi start -r esbuild-register -r tsconfig-paths --watch",
     "start": "koishi start"
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "esbuild": "^0.12.25",
     "esbuild-register": "^2.6.0",
     "tsconfig-paths": "^3.12.0",
