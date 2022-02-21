@@ -3,8 +3,6 @@ port: 8080
 plugins:
   console:
   dataview:
-  insight:
   logger:
   manager:
-  ping:
   status:
