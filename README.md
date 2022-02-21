@@ -1,8 +1,6 @@
 # Koishi 模板仓库
 
-## 目录
-
-- [准备工作](#准备工作)
+- [安装方法](#安装方法)
   - [从当前仓库创建](#从当前仓库创建)
   - [使用包管理器创建](#使用包管理器创建)
 - [基本功能](#基本功能)
@@ -10,23 +8,23 @@
   - [设置环境变量](#设置环境变量)
   - [工作区开发](#工作区开发)
 
-## 准备工作
+## 安装方法
 
-我们提供了两种初始化方法。你可以使用其中的任意一种。
+我们提供了两种安装方法。你可以使用其中的任意一种。
 
 ### 从当前仓库创建
 
 1. 点击 [**这里**](https://github.com/koishijs/boilerplate/generate) 以创建此仓库的副本。<br>注意：这是一个模板仓库，创建副本不同于 fork，它生成的新仓库不会包含当前仓库的提交历史。
 2. 将你创建的项目 clone 到本地，并在本地目录启动命令行。
-3. 输入 `npm install` 安装依赖。
-4. 输入 `npm run dev` 开始运行。
+3. 输入 `npm install` / `yarn` 安装依赖。
+4. 输入 `npm run dev` / `yarn dev` 开始运行。
 
 ### 使用包管理器创建
 
 在任意目录启动命令行，输入下面的指令：
 
 ```sh
-npm init koishi
+npm init koishi         # yarn create koishi
 ```
 
 跟随提示即可完成安装流程。
@@ -45,10 +43,10 @@ npm init koishi -m https://hub.fastgit.xyz
 
 ```sh
 # 开发模式
-npm run dev
+npm run dev             # yarn dev
 
 # 生产模式
-npm start
+npm start               # yarn start
 ```
 
 ### 设置环境变量
@@ -64,4 +62,4 @@ npm start
 - init：创建新插件
 - pub：发布插件
 
-具体用法请参考 [官方文档](https://koishi.js.org/guide/introduction/workspace.html)。
+具体用法请参考 [**官方文档**](https://koishi.js.org/guide/introduction/workspace.html)。
