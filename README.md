@@ -49,6 +49,8 @@ npm run dev             # yarn dev
 npm start               # yarn start
 ```
 
+如果你不进行工作区开发，那么开发模式和生产模式将几乎没有区别。
+
 ### 设置环境变量
 
 你可以在当前目录创建一个 `.env` 文件，并在里面填写你的环境变量。这个文件已经被包含在 `.gitignore` 中，你可以在其中填写隐私信息（例如账号密码）而不用担心被上传到远端。参见 [**dotenv**](https://github.com/motdotla/dotenv)。
