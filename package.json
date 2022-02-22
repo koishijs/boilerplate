@@ -12,7 +12,7 @@
     "bump": "koishi-scripts bump",
     "init": "koishi-scripts init",
     "pub": "koishi-scripts pub",
-    "dev": "cross-env NODE_ENV=development koishi start -r esbuild-register -r tsconfig-paths --watch",
+    "dev": "cross-env NODE_ENV=development koishi start -r esbuild-register -r tsconfig-paths/register --watch",
     "start": "koishi start"
   },
   "devDependencies": {
@@ -33,7 +33,7 @@
     "@koishijs/plugin-logger": "^1.2.1",
     "@koishijs/plugin-manager": "^1.5.3",
     "@koishijs/plugin-status": "^5.3.1",
-    "@koishijs/scripts": "^1.0.0",
+    "@koishijs/scripts": "^1.0.1",
     "koishi": "^4.3.1"
   }
 }
