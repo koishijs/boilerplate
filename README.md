@@ -17,7 +17,7 @@
 1. 点击 [**这里**](https://github.com/koishijs/boilerplate/generate) 以创建此仓库的副本。<br>注意：这是一个模板仓库，创建副本不同于 fork，它生成的新仓库不会包含当前仓库的提交历史。
 2. 将你创建的项目 clone 到本地，并在本地目录启动命令行。
 3. 输入 `npm install` / `yarn` 安装依赖。
-4. 输入 `npm run dev` / `yarn dev` 开始运行。
+4. 输入 `npm start` / `yarn start` 开始运行。
 
 ### 使用包管理器创建
 
@@ -27,33 +27,21 @@
 npm init koishi         # yarn create koishi
 ```
 
-跟随提示即可完成安装流程。
+跟随提示即可完成全套初始化流程。
 
-由于国内可能无法访问 GitHub，你可能需要科学上网或使用镜像。下面提供一种使用镜像的写法：
-
-```sh
-npm init koishi -m https://hub.fastgit.xyz
-```
+> 由于国内可能无法访问 GitHub，你可能需要科学上网或使用镜像。例如你可以使用 [FastGit](http://fastgit.org/) 作为镜像源，只需在上面的脚本后添加 `-m https://hub.fastgit.xyz` 即可。
 
 ## 基本功能
 
 ### 启动机器人
 
-在机器人的目录下输入下面的命令行即可启用机器人：
+如果你顺利完成了上一步操作，你的应用此时应该已经是启动状态，你无需进行额外的操作。但当应用处于关闭状态时，你可以在运行下面的指令以启动：
 
 ```sh
-# 开发模式
-npm run dev             # yarn dev
-
-# 生产模式
 npm start               # yarn start
 ```
 
-如果你不进行工作区开发，那么开发模式和生产模式将几乎没有区别。
-
-### 设置环境变量
-
-你可以在当前目录创建一个 `.env` 文件，并在里面填写你的环境变量。这个文件已经被包含在 `.gitignore` 中，你可以在其中填写隐私信息（例如账号密码）而不用担心被上传到远端。参见 [**dotenv**](https://github.com/motdotla/dotenv)。
+关于控制台的使用方法，请参考官方文档 [**使用控制台**](https://koishi.js.org/guide/introduction/template.html#使用控制台) 章节。
 
 ### 工作区开发
 
@@ -61,7 +49,8 @@ npm start               # yarn start
 
 - build：构建源代码
 - bump：更新版本号
-- init：创建新插件
+- clean：删除构建输出
+- new：创建新插件
 - pub：发布插件
 
-具体用法请参考 [**官方文档**](https://koishi.js.org/guide/introduction/workspace.html)。
+关于每个指令的具体用法，请参考官方文档 [**工作区开发**](https://koishi.js.org/guide/introduction/development.html) 章节。
