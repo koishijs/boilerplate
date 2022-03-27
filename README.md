@@ -49,7 +49,7 @@ npm start               # yarn start
 
 - build：构建源代码
 - bump：更新版本号
-- clean：删除构建输出
+- dep：更新依赖
 - new：创建新插件
 - pub：发布插件
 
