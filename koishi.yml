@@ -3,7 +3,6 @@ port: 8080
 plugins:
   console:
     open: true
-  dataview:
   logger:
   manager:
   status:
