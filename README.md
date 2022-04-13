@@ -50,7 +50,7 @@ npm start               # yarn start
 - build：构建源代码
 - bump：更新版本号
 - dep：更新依赖
-- new：创建新插件
 - pub：发布插件
+- setup：创建新插件
 
 关于每个指令的具体用法，请参考官方文档 [**工作区开发**](https://koishi.js.org/guide/introduction/development.html) 章节。
