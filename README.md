@@ -41,7 +41,7 @@ npm init koishi         # yarn create koishi
 npm start               # yarn start
 ```
 
-关于控制台的使用方法，请参考官方文档 [**使用控制台**](https://koishi.js.org/guide/introduction/template.html#使用控制台) 章节。
+关于控制台的使用方法，请参考官方文档 [**使用控制台**](https://koishi.js.org/manual/starter/installation.html#使用控制台) 章节。
 
 ### 工作区开发
 
@@ -53,4 +53,4 @@ npm start               # yarn start
 - pub：发布插件
 - setup：创建新插件
 
-关于每个指令的具体用法，请参考官方文档 [**工作区开发**](https://koishi.js.org/guide/introduction/development.html) 章节。
+关于每个指令的具体用法，请参考官方文档 [**工作区开发**](https://koishi.js.org/manual/development.html) 章节。

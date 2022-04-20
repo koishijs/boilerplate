@@ -37,6 +37,7 @@
     "@koishijs/plugin-dataview": "^1.2.2",
     "@koishijs/plugin-logger": "^1.2.2",
     "@koishijs/plugin-manager": "^1.7.0",
+    "@koishijs/plugin-sandbox": "^1.1.0",
     "@koishijs/plugin-status": "^5.3.5",
     "koishi": "^4.5.2"
   }

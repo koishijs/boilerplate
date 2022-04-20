@@ -6,3 +6,7 @@ plugins:
   logger:
   manager:
   status:
+  sandbox:
+  onebot:
+  discord:
+  telegram:
