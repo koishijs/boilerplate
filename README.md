@@ -29,7 +29,7 @@ npm init koishi         # yarn create koishi
 
 跟随提示即可完成全套初始化流程。
 
-> 由于国内可能无法访问 GitHub，你可能需要科学上网或使用镜像。例如你可以使用 [FastGit](http://fastgit.org/) 作为镜像源，只需在上面的脚本后添加 `-m https://hub.fastgit.xyz` 即可。
+> 由于国内可能无法访问 GitHub，你可能需要科学上网或使用镜像。例如你可以使用 [FastGit](http://fastgit.org/) 作为镜像源，只需在上面的脚本后添加 `-m https://download.fastgit.org` 即可。
 
 ## 基本功能
 
