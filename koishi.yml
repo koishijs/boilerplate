@@ -8,5 +8,8 @@ plugins:
   status:
   sandbox:
   onebot:
+    bots: []
   discord:
+    bots: []
   telegram:
+    bots: []
