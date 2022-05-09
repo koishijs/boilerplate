@@ -7,9 +7,9 @@ plugins:
   manager:
   status:
   sandbox:
-  onebot:
+  adapter-onebot:
     bots: []
-  discord:
+  adapter-discord:
     bots: []
-  telegram:
+  adapter-telegram:
     bots: []
