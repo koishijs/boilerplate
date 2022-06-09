@@ -20,8 +20,8 @@
     "start": "koishi start"
   },
   "devDependencies": {
-    "@koishijs/client": "^3.3.3",
-    "@koishijs/scripts": "^2.0.0",
+    "@koishijs/client": "^3.4.0",
+    "@koishijs/scripts": "^2.0.1",
     "@types/node": "^17.0.35",
     "cross-env": "^7.0.3",
     "esbuild": "^0.14.39",
@@ -34,19 +34,19 @@
     "yakumo-version": "^0.2.4"
   },
   "dependencies": {
-    "@koishijs/cli": "^4.7.2",
+    "@koishijs/cli": "^4.7.3",
     "@koishijs/plugin-adapter-discord": "^2.1.2",
-    "@koishijs/plugin-adapter-onebot": "^4.2.6",
+    "@koishijs/plugin-adapter-onebot": "^4.2.7",
     "@koishijs/plugin-adapter-telegram": "^2.2.7",
-    "@koishijs/plugin-console": "^3.3.3",
+    "@koishijs/plugin-console": "^3.4.0",
     "@koishijs/plugin-dataview": "^1.2.5",
     "@koishijs/plugin-help": "^1.0.1",
     "@koishijs/plugin-logger": "^1.2.3",
-    "@koishijs/plugin-manager": "^1.8.5",
+    "@koishijs/plugin-manager": "^1.9.0",
     "@koishijs/plugin-sandbox": "^1.1.4",
     "@koishijs/plugin-status": "^5.4.1",
     "@koishijs/plugin-suggest": "^1.1.0",
-    "koishi": "^4.7.2"
+    "koishi": "^4.7.3"
   },
   "yakumo": {
     "require": [
