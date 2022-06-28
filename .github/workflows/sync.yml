@@ -1,0 +1,27 @@
+name: Sync
+
+on:
+  push:
+    branches:
+      - develop
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out
+        uses: actions/checkout@v3
+
+      - name: Sync files
+        run: bash .github/workflows/sync.sh
+
+      - name: Deploy master
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: dist
+          publish_branch: master
+          force_orphan: true
+          enable_jekyll: true
+          exclude_assets: ''

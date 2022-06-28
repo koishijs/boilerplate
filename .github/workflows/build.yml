@@ -29,8 +29,9 @@ jobs:
 
       - name: Set up yarn
         run: |
-          wget -O $RUNNER_TEMP/yarn.cjs https://repo.yarnpkg.com/3.2.0/packages/yarnpkg-cli/bin/yarn.js
+          curl -o $RUNNER_TEMP/yarn.cjs https://repo.yarnpkg.com/3.2.0/packages/yarnpkg-cli/bin/yarn.js
           echo 'nodeLinker: node-modules' > .yarnrc.yml
+          sed -i package.json -e 's/\^//g'
 
       - name: Install
         run: node $RUNNER_TEMP/yarn.cjs install --no-immutable

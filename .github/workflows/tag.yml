@@ -3,7 +3,7 @@ name: Tag
 on:
   push:
     branches:
-      - main
+      - develop
 
 jobs:
   release:
@@ -17,7 +17,7 @@ jobs:
 
       - id: version
         name: Check version
-        run: bash .github/workflows/version.sh
+        run: bash .github/workflows/tag.sh
 
       - name: Create release
         if: ${{ steps.version.outputs.tag }}
