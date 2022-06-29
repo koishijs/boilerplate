@@ -44,20 +44,20 @@ jobs:
           curl -o $RUNNER_TEMP/yarn.cjs https://repo.yarnpkg.com/3.2.0/packages/yarnpkg-cli/bin/yarn.js
           node $RUNNER_TEMP/yarn.cjs install --no-immutable
 
-      - id: release
-        name: Get latest release
-        run: >
-          echo ::set-output name=data::$(
-            curl
-            -H "Accept: application/vnd.github.v3+json"
-            -H "Authorization: token ${{ secrets.WORKFLOW_TOKEN }}"
-            https://api.github.com/repos/${{ github.repository }}/releases/latest
-          )
-
       - name: Create release
         uses: koishijs/action-release@latest
         with:
           token: ${{ secrets.WORKFLOW_TOKEN }}
+
+      - id: release
+        name: Get latest release
+        run: >
+          echo '::set-output name=data::$(
+            curl
+            -H "Accept: application/vnd.github.v3+json"
+            -H "Authorization: token ${{ secrets.WORKFLOW_TOKEN }}"
+            https://api.github.com/repos/${{ github.repository }}/releases/latest
+          )'
 
       - name: Upload
         run: >
