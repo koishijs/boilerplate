@@ -1,0 +1,61 @@
+name: Build
+
+on:
+  release:
+    types:
+      - created
+  workflow_dispatch:
+
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        node:
+          - 12
+          - 16
+
+        target:
+          - runs-on: windows-latest
+            platform: windows
+          - runs-on: ubuntu-latest
+            platform: linux
+          - runs-on: macos-latest
+            platform: darwin
+
+    runs-on: ${{ matrix.target.runs-on }}
+
+    steps:
+      - name: Check out
+        uses: actions/checkout@v3
+        with:
+          ref: develop
+
+      - name: Set up Node
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node }}
+
+      - name: Install zip
+        if: ${{ matrix.target.platform == 'windows' }}
+        run: scoop install zip
+
+      - name: Prepare
+        run: bash .github/workflows/prepare.sh
+
+      - name: Install
+        run: |
+          curl -o $RUNNER_TEMP/yarn.cjs https://repo.yarnpkg.com/3.2.0/packages/yarnpkg-cli/bin/yarn.js
+          node $RUNNER_TEMP/yarn.cjs install --no-immutable
+
+      - name: Pack file
+        run: bash .github/workflows/pack.sh
+
+      - name: Upload asset
+        run: >
+          bash .github/workflows/upload.sh
+          '${{ github.repository }}'
+          '${{ matrix.target.platform }}-amd64-node${{ matrix.node }}'
+          '${{ toJSON(github.event.release) }}'
+        env:
+          TOKEN: ${{ secrets.WORKFLOW_TOKEN }}

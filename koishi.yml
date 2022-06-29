@@ -1,0 +1,18 @@
+port: 5140
+maxPort: 5149
+
+plugins:
+  help:
+  suggest:
+  console:
+    open: true
+  logger:
+  manager:
+  status:
+  sandbox:
+  adapter-onebot:
+    bots: []
+  adapter-discord:
+    bots: []
+  adapter-telegram:
+    bots: []
