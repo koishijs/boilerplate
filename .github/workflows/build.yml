@@ -1,6 +1,9 @@
 name: Build
 
 on:
+  release:
+    types:
+      - created
   workflow_dispatch:
 
 jobs:
@@ -21,22 +24,23 @@ jobs:
     steps:
       - name: Check out
         uses: actions/checkout@v3
+        with:
+          ref: develop
 
       - name: Set up Node
         uses: actions/setup-node@v2
         with:
           node-version: 16
 
-      - name: Set up yarn
-        run: |
-          curl -o $RUNNER_TEMP/yarn.cjs https://repo.yarnpkg.com/3.2.0/packages/yarnpkg-cli/bin/yarn.js
-          echo 'nodeLinker: node-modules' > .yarnrc.yml
-          sed -i package.json -e 's/\^//g'
+      - name: Prepare
+        run: bash .github/workflows/prepare.sh
 
       - name: Install
-        run: node $RUNNER_TEMP/yarn.cjs install --no-immutable
+        run: |
+          curl -o $RUNNER_TEMP/yarn.cjs https://repo.yarnpkg.com/3.2.0/packages/yarnpkg-cli/bin/yarn.js
+          node $RUNNER_TEMP/yarn.cjs install --no-immutable
 
       - name: Create release
         uses: koishijs/action-release@latest
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.WORKFLOW_TOKEN }}

@@ -1,8 +1,9 @@
 {
   "name": "koishi-boilerplate",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "files": [
+    ".env",
     "koishi.yml"
   ],
   "license": "MIT",
@@ -21,6 +22,12 @@
     "dev": "cross-env NODE_ENV=development koishi start -r esbuild-register -r yml-register --watch",
     "start": "koishi start"
   },
+  "yakumo": {
+    "require": [
+      "esbuild-register",
+      "yml-register"
+    ]
+  },
   "devDependencies": {
     "@koishijs/client": "^3.4.2",
     "@koishijs/scripts": "^2.0.3",
@@ -34,6 +41,12 @@
     "yakumo-publish": "^0.2.4",
     "yakumo-upgrade": "^0.2.3",
     "yakumo-version": "^0.2.4"
+  },
+  "optionalDependencies": {
+    "@koishijs/plugin-database-mongo": "^3.4.0",
+    "@koishijs/plugin-database-mysql": "^4.5.0",
+    "@koishijs/plugin-database-sqlite": "^1.4.0",
+    "koishi-plugin-gocqhttp": "^2.3.0"
   },
   "dependencies": {
     "@koishijs/cli": "^4.7.5",
@@ -49,11 +62,5 @@
     "@koishijs/plugin-status": "^5.4.1",
     "@koishijs/plugin-suggest": "^1.1.1",
     "koishi": "^4.7.5"
-  },
-  "yakumo": {
-    "require": [
-      "esbuild-register",
-      "yml-register"
-    ]
   }
 }
