@@ -3,7 +3,7 @@ name: Clean
 on:
   release:
     types:
-      - unpublished
+      - deleted
 
 jobs:
   clean:

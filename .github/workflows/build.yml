@@ -36,6 +36,10 @@ jobs:
         with:
           node-version: ${{ matrix.node }}
 
+      - name: Install zip
+        if: ${{ matrix.target.platform == 'windows' }}
+        run: scoop install zip
+
       - name: Prepare
         run: bash .github/workflows/prepare.sh
 
@@ -44,27 +48,14 @@ jobs:
           curl -o $RUNNER_TEMP/yarn.cjs https://repo.yarnpkg.com/3.2.0/packages/yarnpkg-cli/bin/yarn.js
           node $RUNNER_TEMP/yarn.cjs install --no-immutable
 
-      - name: Create release
-        uses: koishijs/action-release@latest
-        with:
-          token: ${{ secrets.WORKFLOW_TOKEN }}
+      - name: Pack file
+        run: bash .github/workflows/pack.sh
 
-      - id: release
-        name: Get latest release
+      - name: Upload asset
         run: >
-          echo '::set-output name=data::$(
-            curl
-            -H "Accept: application/vnd.github.v3+json"
-            -H "Authorization: token ${{ secrets.WORKFLOW_TOKEN }}"
-            https://api.github.com/repos/${{ github.repository }}/releases/latest
-          )'
-
-      - name: Upload
-        run: >
-          curl
-          -X POST
-          -H "Accept: application/vnd.github.v3+json"
-          -H "Authorization: token ${{ secrets.WORKFLOW_TOKEN }}"
-          -H "Content-Type: application/zip"
-          ${{ steps.release.output.data.upload_url }}?name=${{ steps.release.output.data.tag_name }}-${{ matrix.target.platform }}-x64-node${{ matrix.node }}.zip
-          --data-binary @$RUNNER_TEMP/bundle.zip
+          bash .github/workflows/upload.sh
+          '${{ github.repository }}'
+          '${{ matrix.target.platform }}-amd64-node${{ matrix.node }}'
+          '${{ toJSON(github.event.release) }}'
+        env:
+          TOKEN: ${{ secrets.WORKFLOW_TOKEN }}
