@@ -11,30 +11,54 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        node:
-          - 12
-          - 16
-
         target:
           - runs-on: windows-latest
             platform: windows
+          - runs-on: windows-latest
+            platform: windows
+            node: 12
           - runs-on: ubuntu-latest
             platform: linux
+          - runs-on: ubuntu-latest
+            platform: linux
+            emulate: arm64
           - runs-on: macos-latest
             platform: darwin
 
     runs-on: ${{ matrix.target.runs-on }}
 
     steps:
+      - name: Set up variables
+        id: vars
+        run: |
+          echo ::set-output name=NODE_VERSION::${{ matrix.target.node || '16' }}
+          echo ::set-output name=ARCH::${{ matrix.target.emulate || 'amd64' }}
+
+      - name: Install nix
+        if: ${{ matrix.target.emulate }}
+        uses: cachix/install-nix-action@v15
+
+      - name: Set up qemu and binfmt
+        if: ${{ matrix.target.emulate }}
+        uses: docker/setup-qemu-action@v2
+        with:
+          platforms: ${{ matrix.target.emulate }}
+
       - name: Check out
         uses: actions/checkout@v3
         with:
           ref: develop
 
       - name: Set up Node
+        if: ${{ !matrix.target.emulate }}
         uses: actions/setup-node@v2
         with:
-          node-version: ${{ matrix.node }}
+          node-version: ${{ steps.vars.outputs.NODE_VERSION }}
+
+      - name: Set up Node for emulating
+        if: ${{ matrix.target.emulate == 'arm64' }}
+        run: |
+          nix profile install nixpkgs#nodejs-${{ steps.vars.outputs.NODE_VERSION }}_x --option system aarch64-linux
 
       - name: Install zip
         if: ${{ matrix.target.platform == 'windows' }}
@@ -55,7 +79,7 @@ jobs:
         run: >
           bash .github/workflows/upload.sh
           '${{ github.repository }}'
-          '${{ matrix.target.platform }}-amd64-node${{ matrix.node }}'
+          '${{ matrix.target.platform }}-${{ steps.vars.outputs.ARCH }}-node${{ steps.vars.outputs.NODE_VERSION }}'
           '${{ toJSON(github.event.release) }}'
         env:
           TOKEN: ${{ secrets.WORKFLOW_TOKEN }}
