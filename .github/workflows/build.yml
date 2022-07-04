@@ -62,7 +62,7 @@ jobs:
 
       - name: Install zip
         if: ${{ matrix.target.platform == 'windows' }}
-        run: scoop install zip
+        run: choco install zip
 
       - name: Prepare
         run: bash .github/workflows/prepare.sh
