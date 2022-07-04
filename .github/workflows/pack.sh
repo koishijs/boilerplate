@@ -55,4 +55,4 @@ for file in $(find . | cut -d / -f 2-); do
   fi
 done
 
-zip -9qry ../bundle.zip $(ls -a | sed '1,2d')
+zip $([[ $OSTYPE = "msys" ]] && echo "-9qr" || echo "-9qry") ../bundle.zip $(ls -a | sed '1,2d')
