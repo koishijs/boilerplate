@@ -44,7 +44,7 @@ for file in $(find . | cut -d / -f 2-); do
   flag=0
 
   for item in $blacklist; do
-    if [[ $file =~ $item ]]; then
+    if [[ $(echo $file | rev | cut -d / -f 1 | rev) = $item ]]; then
       flag=1
       break
     fi

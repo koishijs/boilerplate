@@ -34,11 +34,11 @@ jobs:
           echo ::set-output name=NODE_VERSION::${{ matrix.target.node || '16' }}
           echo ::set-output name=ARCH::${{ matrix.target.emulate || 'amd64' }}
 
-      - name: Install nix
+      - name: Install nix (for arm64)
         if: ${{ matrix.target.emulate }}
         uses: cachix/install-nix-action@v15
 
-      - name: Set up qemu and binfmt
+      - name: Set up qemu and binfmt (for arm64)
         if: ${{ matrix.target.emulate }}
         uses: docker/setup-qemu-action@v2
         with:
@@ -55,12 +55,12 @@ jobs:
         with:
           node-version: ${{ steps.vars.outputs.NODE_VERSION }}
 
-      - name: Set up Node for emulating
+      - name: Set up Node (for arm64)
         if: ${{ matrix.target.emulate == 'arm64' }}
         run: |
           nix profile install nixpkgs#nodejs-${{ steps.vars.outputs.NODE_VERSION }}_x --option system aarch64-linux
 
-      - name: Install zip
+      - name: Install zip (for windows)
         if: ${{ matrix.target.platform == 'windows' }}
         run: choco install zip
 
