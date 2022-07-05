@@ -24,5 +24,4 @@ jobs:
           publish_branch: master
           force_orphan: true
           enable_jekyll: true
-          exclude_assets: ''
           commit_message: '[skip ci] deploy'
