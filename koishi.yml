@@ -10,9 +10,3 @@ plugins:
   manager:
   status:
   sandbox:
-  adapter-onebot:
-    bots: []
-  adapter-discord:
-    bots: []
-  adapter-telegram:
-    bots: []
