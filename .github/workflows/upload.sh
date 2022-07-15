@@ -10,7 +10,7 @@ if [ -z "$release" ]; then
   )
 fi
 
-name=$(cat package.json | jq -r '.name')
+name=$(cat package.json | jq -r '.name' | cut -d / -f 2)
 tag_name=$(echo "$release" | jq -r '.tag_name')
 upload_url=$(echo "$release" | jq -r '.upload_url' | cut -d '{' -f 1)
 

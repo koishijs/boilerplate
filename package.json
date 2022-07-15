@@ -1,5 +1,5 @@
 {
-  "name": "koishi-boilerplate",
+  "name": "@koishijs/boilerplate",
   "version": "1.0.2",
   "private": true,
   "files": [

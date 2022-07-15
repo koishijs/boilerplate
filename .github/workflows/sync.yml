@@ -22,6 +22,8 @@ jobs:
           github_token: ${{ secrets.WORKFLOW_TOKEN }}
           publish_dir: dist
           publish_branch: master
+          # https://github.com/peaceiris/actions-gh-pages/issues/163
+          exclude_assets: ''
           force_orphan: true
           enable_jekyll: true
           commit_message: '[skip ci] deploy'
