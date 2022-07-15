@@ -7,10 +7,8 @@ mv $RUNNER_TEMP/dist dist
 # modify package.json
 cd dist
 
-sed -i package.json \
--e '/"version": /c\
-  "version": "0.0.0",'
--e '/"optionalDependencies": {/,/},/d'
+cat package.json | jq '.version="0.0.0" | del(.optionalDependencies)' > package.json.tmp
+mv -f package.json.tmp package.json
 
 # modify workflows
 cd .github/workflows
