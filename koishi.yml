@@ -8,5 +8,6 @@ plugins:
     open: true
   logger:
   manager:
+    searchUrl: ${{ env.GITHUB_CONTENT_MIRROR }}/koishijs/registry/dist/index.json
   status:
   sandbox:
