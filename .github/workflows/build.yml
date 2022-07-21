@@ -67,7 +67,7 @@ jobs:
       - name: Prepare
         run: bash .github/workflows/prepare.sh
 
-      - name: Install
+      - name: Install dependencies
         run: |
           curl -o $RUNNER_TEMP/yarn.cjs https://repo.yarnpkg.com/3.2.0/packages/yarnpkg-cli/bin/yarn.js
           node $RUNNER_TEMP/yarn.cjs install --no-immutable

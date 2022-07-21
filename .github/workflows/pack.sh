@@ -1,58 +1,24 @@
-whitelist="
-package.json
-README*
-LICENSE*
-yarn.lock
-node_modules
-.yarnrc.yml"
+rm .gitignore
 
-blacklist="
-.git
-.yarn"
+echo "package.json" >> .gitignore
+echo "README*" >> .gitignore
+echo "LICENSE*" >> .gitignore
+echo "yarn.lock" >> .gitignore
+echo "node_modules" >> .gitignore
+echo ".yarnrc.yml" >> .gitignore
+echo "!.git" >> .gitignore
+echo "!.yarn" >> .gitignore
 
-for file in $(cat package.json | sed -n '/"files": \[/,/\]/p' | sed '1d' | sed '$d'); do
-  file=$(echo $file | cut -d \" -f 2)
-  body=$(echo $file | cut -d ! -f 2)
-
-  if [[ $body == $file ]]; then
-    whitelist="$whitelist $body"
-  else
-    blacklist="$blacklist $body"
-  fi
+for file in $(cat package.json | jq -r '.files' | sed '1d' | sed '$d'); do
+  echo $file | cut -d \" -f 2 >> .gitignore
 done
 
-for file in $(find . | cut -d / -f 2-); do
-  flag=0
-
-  for item in $whitelist; do
-    if [[ $file =~ $item ]]; then
-      flag=1
-      break
-    fi
-  done
-
-  if [[ $flag = 1 ]]; then
-    dir=$(dirname $RUNNER_TEMP/bundle/$file)
-    mkdir -p $dir
-    cp -a $file $dir
-  fi
+for file in $(find . -type f | git check-ignore --stdin --no-index); do
+  dir=$(dirname $RUNNER_TEMP/bundle/$file)
+  mkdir -p $dir
+  cp -a $file $dir
 done
 
 cd $RUNNER_TEMP/bundle
 
-for file in $(find . | cut -d / -f 2-); do
-  flag=0
-
-  for item in $blacklist; do
-    if [[ $(echo $file | rev | cut -d / -f 1 | rev) = $item ]]; then
-      flag=1
-      break
-    fi
-  done
-
-  if [[ $flag = 1 ]]; then
-    rm -rf $file
-  fi
-done
-
-zip $([[ $OSTYPE = "msys" ]] && echo "-9qr" || echo "-9qry") ../bundle.zip $(ls -a | sed '1,2d')
+zip $([[ $OSTYPE = "msys" ]] && echo "-9qr" || echo "-9qry") ../bundle.zip $(ls -A)
