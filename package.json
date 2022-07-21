@@ -1,6 +1,6 @@
 {
   "name": "@koishijs/boilerplate",
-  "version": "1.0.2",
+  "version": "1.0.0",
   "private": true,
   "files": [
     ".env",
@@ -45,7 +45,7 @@
   "optionalDependencies": {
     "@koishijs/plugin-database-mongo": "^3.4.1",
     "@koishijs/plugin-database-mysql": "^4.5.1",
-    "@koishijs/plugin-database-sqlite": "^1.4.2",
+    "@koishijs/plugin-database-sqlite": "^1.4.3",
     "koishi-plugin-gocqhttp": "^2.3.0"
   },
   "dependencies": {

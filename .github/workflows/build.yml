@@ -30,9 +30,10 @@ jobs:
     steps:
       - name: Set up variables
         id: vars
+        shell: bash
         run: |
-          echo ::set-output name=NODE_VERSION::${{ matrix.target.node || '16' }}
-          echo ::set-output name=ARCH::${{ matrix.target.emulate || 'amd64' }}
+          echo "::set-output name=NODE_VERSION::${{ matrix.target.node || '16' }}"
+          echo "::set-output name=ARCH::${{ matrix.target.emulate || 'amd64' }}"
 
       - name: Install nix (for arm64)
         if: ${{ matrix.target.emulate }}
@@ -76,6 +77,7 @@ jobs:
         run: bash .github/workflows/pack.sh
 
       - name: Upload asset
+        shell: bash
         run: >
           bash .github/workflows/upload.sh
           '${{ github.repository }}'
