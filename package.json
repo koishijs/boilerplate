@@ -1,6 +1,6 @@
 {
   "name": "@koishijs/boilerplate",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "private": true,
   "files": [
     ".env",
@@ -23,37 +23,37 @@
     "start": "koishi start"
   },
   "devDependencies": {
-    "@koishijs/client": "^4.2.0",
+    "@koishijs/client": "^4.3.1",
     "@koishijs/scripts": "^3.1.0",
-    "@types/node": "^17.0.35",
+    "@types/node": "^17.0.45",
     "cross-env": "^7.0.3",
-    "esbuild": "^0.14.48",
+    "esbuild": "^0.14.51",
     "esbuild-register": "^3.3.3",
-    "typescript": "^4.7.2",
+    "typescript": "^4.7.4",
     "yml-register": "^1.0.0",
     "yakumo": "^0.3.1",
     "yakumo-publish": "^0.3.0",
-    "yakumo-upgrade": "^0.3.0",
+    "yakumo-upgrade": "^0.3.1",
     "yakumo-version": "^0.3.0"
   },
   "optionalDependencies": {
     "@koishijs/plugin-database-mongo": "^3.4.1",
     "@koishijs/plugin-database-mysql": "^4.5.1",
     "@koishijs/plugin-database-sqlite": "^1.4.3",
-    "koishi-plugin-gocqhttp": "^3.0.0"
+    "koishi-plugin-gocqhttp": "^3.0.2"
   },
   "dependencies": {
     "@koishijs/cli": "^4.8.3",
     "@koishijs/plugin-adapter-discord": "^3.0.3",
     "@koishijs/plugin-adapter-onebot": "^5.0.7",
     "@koishijs/plugin-adapter-telegram": "^3.1.3",
-    "@koishijs/plugin-console": "^4.2.0",
+    "@koishijs/plugin-console": "^4.3.1",
     "@koishijs/plugin-dataview": "^2.1.0",
     "@koishijs/plugin-help": "^1.1.0",
     "@koishijs/plugin-logger": "^2.1.0",
-    "@koishijs/plugin-market": "^1.1.0",
+    "@koishijs/plugin-market": "^1.1.2",
     "@koishijs/plugin-sandbox": "^2.1.0",
-    "@koishijs/plugin-status": "^6.1.0",
+    "@koishijs/plugin-status": "^6.1.1",
     "@koishijs/plugin-suggest": "^1.1.1",
     "koishi": "^4.8.3"
   }
