@@ -23,9 +23,9 @@
     "start": "koishi start"
   },
   "devDependencies": {
-    "@koishijs/client": "^4.3.2",
+    "@koishijs/client": "^4.3.4",
     "@koishijs/scripts": "^3.2.0",
-    "@types/node": "^17.0.45",
+    "@types/node": "^18.6.4",
     "cross-env": "^7.0.3",
     "esbuild": "^0.14.51",
     "esbuild-register": "^3.3.3",
@@ -43,18 +43,18 @@
     "koishi-plugin-gocqhttp": "^3.0.2"
   },
   "dependencies": {
-    "@koishijs/cli": "^4.8.3",
+    "@koishijs/cli": "^4.8.4",
     "@koishijs/plugin-adapter-discord": "^3.0.3",
     "@koishijs/plugin-adapter-onebot": "^5.0.7",
     "@koishijs/plugin-adapter-telegram": "^3.1.3",
-    "@koishijs/plugin-console": "^4.3.2",
+    "@koishijs/plugin-console": "^4.3.4",
     "@koishijs/plugin-dataview": "^2.1.1",
     "@koishijs/plugin-help": "^1.1.0",
     "@koishijs/plugin-logger": "^2.1.1",
     "@koishijs/plugin-market": "^1.1.3",
     "@koishijs/plugin-sandbox": "^2.1.1",
-    "@koishijs/plugin-status": "^6.1.2",
+    "@koishijs/plugin-status": "^6.1.3",
     "@koishijs/plugin-suggest": "^1.1.1",
-    "koishi": "^4.8.3"
+    "koishi": "^4.8.4"
   }
 }
