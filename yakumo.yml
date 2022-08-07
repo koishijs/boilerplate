@@ -1,0 +1,8 @@
+require:
+  - yakumo-esbuild
+  - yakumo-esbuild-yaml
+  - yakumo-publish
+  - yakumo-publish-sync
+  - yakumo-upgrade
+  - yakumo-version
+  - '@koishijs/client/lib/yakumo'

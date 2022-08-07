@@ -1,6 +1,6 @@
 {
   "name": "@koishijs/boilerplate",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "private": true,
   "files": [
     ".env",
@@ -13,7 +13,6 @@
   ],
   "scripts": {
     "build": "koishi-scripts build",
-    "clean": "koishi-scripts clean",
     "new": "koishi-scripts new",
     "setup": "koishi-scripts setup",
     "bump": "yakumo version",
@@ -31,8 +30,11 @@
     "esbuild-register": "^3.3.3",
     "typescript": "^4.7.4",
     "yml-register": "^1.0.0",
-    "yakumo": "^0.3.1",
+    "yakumo": "^0.3.2",
+    "yakumo-esbuild": "^0.3.5",
+    "yakumo-esbuild-yaml": "^0.3.1",
     "yakumo-publish": "^0.3.0",
+    "yakumo-publish-sync": "^0.3.1",
     "yakumo-upgrade": "^0.3.1",
     "yakumo-version": "^0.3.0"
   },
@@ -40,7 +42,7 @@
     "@koishijs/plugin-database-mongo": "^3.4.1",
     "@koishijs/plugin-database-mysql": "^4.5.1",
     "@koishijs/plugin-database-sqlite": "^1.4.3",
-    "koishi-plugin-gocqhttp": "^3.0.2"
+    "koishi-plugin-gocqhttp": "^3.0.3"
   },
   "dependencies": {
     "@koishijs/cli": "^4.8.4",
