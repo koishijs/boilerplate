@@ -2,13 +2,17 @@ port: 5140
 maxPort: 5149
 
 plugins:
-  help:
-  suggest:
-  console:
-    open: true
-  logger:
-  market:
-    search:
-      endpoint: ${{ env.GITHUB_CONTENT_MIRROR }}/koishijs/registry/dist/index.json
-  status:
-  sandbox:
+  group:basic:
+    help:
+    suggest:
+    rate-limit:
+  group:console:
+    console:
+      open: true
+    logger:
+    insight:
+    market:
+      search:
+        endpoint: ${{ env.GITHUB_CONTENT_MIRROR }}/koishijs/registry/dist/index.json
+    sandbox:
+    status:
