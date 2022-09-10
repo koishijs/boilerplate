@@ -16,6 +16,6 @@ plugins:
       registry:
         endpoint: https://registry.npmmirror.com
       search:
-        endpoint: ${{ env.GITHUB_CONTENT_MIRROR }}/koishijs/registry/dist/index.json
+        endpoint: https://registry.koishi.chat/index.json
     sandbox:
     status:
