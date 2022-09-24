@@ -46,7 +46,7 @@
     "@koishijs/plugin-forward": "^2.3.0"
   },
   "dependencies": {
-    "@koishijs/cli": "^4.9.1",
+    "@koishijs/cli": "^4.9.2",
     "@koishijs/plugin-adapter-discord": "^3.1.1",
     "@koishijs/plugin-adapter-onebot": "^5.1.3",
     "@koishijs/plugin-adapter-telegram": "^3.3.1",
@@ -61,7 +61,7 @@
     "@koishijs/plugin-sandbox": "^2.3.1",
     "@koishijs/plugin-status": "^6.1.5",
     "@koishijs/plugin-suggest": "^1.1.5",
-    "koishi": "^4.9.1",
+    "koishi": "^4.9.2",
     "koishi-plugin-gocqhttp": "^3.1.0"
   }
 }

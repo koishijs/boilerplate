@@ -8,7 +8,6 @@ plugins:
     suggest:
   group:console:
     console:
-      open: true
     ~dataview:
     logger:
     insight:
