@@ -1,3 +1,4 @@
+host: localhost
 port: 5140
 maxPort: 5149
 
