@@ -5,12 +5,16 @@ maxPort: 5149
 plugins:
   group:basic:
     help:
-    ~rate-limit:
+    rate-limit:
     suggest:
+    locales:
+    commands:
+    ~admin:
+    ~bind:
   group:console:
     console:
       open: true
-    ~dataview:
+    dataview:
     logger:
     insight:
     market:
@@ -20,6 +24,7 @@ plugins:
         endpoint: https://registry.koishi.chat/index.json
     sandbox:
     status:
+    ~auth:
   group:adapter:
     ~adapter-onebot:
     ~adapter-discord:
