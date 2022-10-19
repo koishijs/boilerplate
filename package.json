@@ -19,7 +19,7 @@
     "dep": "yakumo upgrade",
     "pub": "yakumo publish",
     "dev": "cross-env NODE_ENV=development koishi start -r esbuild-register -r yml-register --watch",
-    "start": "koishi start"
+    "start": "koishi start -r yml-register"
   },
   "devDependencies": {
     "@koishijs/client": "^4.6.7",
