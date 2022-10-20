@@ -1,6 +1,6 @@
 {
   "name": "@koishijs/boilerplate",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "private": true,
   "files": [
     ".env",
@@ -36,8 +36,7 @@
     "yakumo-publish-sync": "^0.3.1",
     "yakumo-tsc": "^0.3.5",
     "yakumo-upgrade": "^0.3.2",
-    "yakumo-version": "^0.3.1",
-    "yml-register": "^1.1.0"
+    "yakumo-version": "^0.3.1"
   },
   "optionalDependencies": {
     "@koishijs/plugin-database-mongo": "^3.5.0",
@@ -67,6 +66,7 @@
     "@koishijs/plugin-status": "^6.1.5",
     "@koishijs/plugin-suggest": "^1.1.5",
     "koishi": "^4.9.6",
-    "koishi-plugin-gocqhttp": "^3.1.3"
+    "koishi-plugin-gocqhttp": "^3.1.3",
+    "yml-register": "^1.1.0"
   }
 }
