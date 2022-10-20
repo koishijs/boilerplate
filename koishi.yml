@@ -26,7 +26,7 @@ plugins:
     status:
     ~auth:
   group:database:
-    ~database-sqlite:
+    database-sqlite:
     ~database-mysql:
     ~database-mongo:
   group:adapter:
