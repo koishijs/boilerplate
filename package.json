@@ -62,7 +62,7 @@
     "@koishijs/plugin-logger": "^2.1.5",
     "@koishijs/plugin-market": "^1.4.1",
     "@koishijs/plugin-rate-limit": "^1.2.2",
-    "@koishijs/plugin-sandbox": "^2.3.2",
+    "@koishijs/plugin-sandbox": "^2.3.3",
     "@koishijs/plugin-status": "^6.1.5",
     "@koishijs/plugin-suggest": "^1.1.5",
     "koishi": "^4.9.7",
