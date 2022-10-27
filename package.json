@@ -39,6 +39,9 @@
     "yakumo-version": "^0.3.1"
   },
   "optionalDependencies": {
+      "@koishijs/plugin-database-mongo": "^3.5.0",
+      "@koishijs/plugin-database-mysql": "^4.6.0",
+      "@koishijs/plugin-database-sqlite": "^1.5.0",
     "@koishijs/plugin-forward": "^2.3.0"
   },
   "dependencies": {
@@ -52,9 +55,6 @@
     "@koishijs/plugin-bind": "^1.3.2",
     "@koishijs/plugin-commands": "^2.1.3",
     "@koishijs/plugin-console": "^4.6.9",
-    "@koishijs/plugin-database-mongo": "^3.5.0",
-    "@koishijs/plugin-database-mysql": "^4.6.0",
-    "@koishijs/plugin-database-sqlite": "^1.5.0",
     "@koishijs/plugin-dataview": "^2.1.5",
     "@koishijs/plugin-help": "^1.2.5",
     "@koishijs/plugin-insight": "^3.1.6",

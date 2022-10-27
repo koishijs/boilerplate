@@ -16,7 +16,7 @@ jobs:
             platform: windows
           - runs-on: windows-latest
             platform: windows
-            node: 12
+            node: 14
           - runs-on: ubuntu-latest
             platform: linux
           - runs-on: ubuntu-latest
