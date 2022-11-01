@@ -1,6 +1,6 @@
 {
   "name": "@koishijs/boilerplate",
-  "version": "1.1.9",
+  "version": "1.1.10",
   "private": true,
   "files": [
     ".env",
@@ -32,7 +32,7 @@
     "yakumo": "^0.3.6",
     "yakumo-esbuild": "^0.3.17",
     "yakumo-esbuild-yaml": "^0.3.1",
-    "yakumo-publish": "^0.3.0",
+    "yakumo-publish": "^0.3.1",
     "yakumo-publish-sync": "^0.3.1",
     "yakumo-tsc": "^0.3.5",
     "yakumo-upgrade": "^0.3.2",
