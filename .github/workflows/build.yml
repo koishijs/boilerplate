@@ -52,7 +52,7 @@ jobs:
 
       - name: Set up Node
         if: ${{ !matrix.target.emulate }}
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: ${{ steps.vars.outputs.NODE_VERSION }}
 
