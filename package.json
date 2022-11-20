@@ -1,6 +1,6 @@
 {
   "name": "@koishijs/boilerplate",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "private": true,
   "files": [
     ".env",
@@ -22,7 +22,7 @@
     "start": "koishi start -r yml-register"
   },
   "devDependencies": {
-    "@koishijs/client": "^4.6.11",
+    "@koishijs/client": "^4.6.12",
     "@koishijs/scripts": "^3.2.6",
     "@types/node": "^18.6.4",
     "cross-env": "^7.0.3",
@@ -40,7 +40,7 @@
   },
   "optionalDependencies": {
     "@koishijs/plugin-database-mongo": "^4.0.0",
-    "@koishijs/plugin-database-mysql": "^5.0.0",
+    "@koishijs/plugin-database-mysql": "^5.0.1",
     "@koishijs/plugin-forward": "^2.3.0"
   },
   "dependencies": {
@@ -53,8 +53,8 @@
     "@koishijs/plugin-auth": "^2.3.2",
     "@koishijs/plugin-bind": "^1.3.2",
     "@koishijs/plugin-commands": "^2.1.5",
-    "@koishijs/plugin-console": "^4.6.11",
-    "@koishijs/plugin-database-sqlite": "^3.0.0",
+    "@koishijs/plugin-console": "^4.6.12",
+    "@koishijs/plugin-database-sqlite": "^3.0.1",
     "@koishijs/plugin-dataview": "^2.1.7",
     "@koishijs/plugin-help": "^1.2.5",
     "@koishijs/plugin-insight": "^3.1.8",
@@ -62,7 +62,7 @@
     "@koishijs/plugin-logger": "^2.1.7",
     "@koishijs/plugin-market": "^1.4.6",
     "@koishijs/plugin-rate-limit": "^1.2.3",
-    "@koishijs/plugin-sandbox": "^2.3.5",
+    "@koishijs/plugin-sandbox": "^2.4.0",
     "@koishijs/plugin-status": "^6.1.6",
     "@koishijs/plugin-suggest": "^1.1.5",
     "koishi": "^4.10.2",
