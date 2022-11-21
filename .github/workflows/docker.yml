@@ -1,9 +1,10 @@
 name: Docker
 
 on:
-  release:
-    types:
-      - created
+  workflow_run:
+    workflows: [Build]
+    branches: [develop]
+    types: [completed]
   workflow_dispatch:
 
 jobs:
