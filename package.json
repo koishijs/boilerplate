@@ -1,6 +1,6 @@
 {
   "name": "@koishijs/boilerplate",
-  "version": "1.2.6",
+  "version": "1.3.0",
   "private": true,
   "files": [
     ".env",
@@ -9,7 +9,9 @@
   "license": "AGPL-3.0",
   "workspaces": [
     "packages/*",
-    "plugins/*"
+    "packages/@*/*",
+    "plugins/*",
+    "plugins/@*/*"
   ],
   "scripts": {
     "new": "koishi-scripts new",
@@ -22,8 +24,8 @@
     "start": "koishi start -r yml-register"
   },
   "devDependencies": {
-    "@koishijs/client": "^4.6.12",
-    "@koishijs/scripts": "^3.2.6",
+    "@koishijs/client": "^4.6.13",
+    "@koishijs/scripts": "^3.3.0",
     "@types/node": "^18.6.4",
     "cross-env": "^7.0.3",
     "esbuild": "^0.14.51",
@@ -33,7 +35,7 @@
     "yakumo-esbuild": "^0.3.18",
     "yakumo-esbuild-yaml": "^0.3.1",
     "yakumo-publish": "^0.3.1",
-    "yakumo-publish-sync": "^0.3.1",
+    "yakumo-publish-sync": "^0.3.2",
     "yakumo-tsc": "^0.3.5",
     "yakumo-upgrade": "^0.3.2",
     "yakumo-version": "^0.3.1"
@@ -44,28 +46,28 @@
     "@koishijs/plugin-forward": "^2.3.0"
   },
   "dependencies": {
-    "@koishijs/cli": "^4.10.2",
+    "@koishijs/cli": "^4.10.3",
     "@koishijs/plugin-adapter-discord": "^3.3.2",
     "@koishijs/plugin-adapter-kook": "^3.4.2",
-    "@koishijs/plugin-adapter-onebot": "^5.4.0",
+    "@koishijs/plugin-adapter-onebot": "^5.4.2",
     "@koishijs/plugin-adapter-telegram": "^3.5.2",
     "@koishijs/plugin-admin": "^1.1.5",
-    "@koishijs/plugin-auth": "^2.3.2",
+    "@koishijs/plugin-auth": "^2.3.3",
     "@koishijs/plugin-bind": "^1.3.2",
     "@koishijs/plugin-commands": "^2.1.5",
-    "@koishijs/plugin-console": "^4.6.12",
+    "@koishijs/plugin-console": "^4.6.13",
     "@koishijs/plugin-database-sqlite": "^3.0.1",
     "@koishijs/plugin-dataview": "^2.1.7",
-    "@koishijs/plugin-help": "^1.2.5",
+    "@koishijs/plugin-help": "^1.2.6",
     "@koishijs/plugin-insight": "^3.1.8",
     "@koishijs/plugin-locales": "^1.0.3",
     "@koishijs/plugin-logger": "^2.1.7",
-    "@koishijs/plugin-market": "^1.4.6",
-    "@koishijs/plugin-rate-limit": "^1.2.3",
+    "@koishijs/plugin-market": "^1.4.7",
+    "@koishijs/plugin-rate-limit": "^1.2.4",
     "@koishijs/plugin-sandbox": "^2.4.0",
     "@koishijs/plugin-status": "^6.1.6",
     "@koishijs/plugin-suggest": "^1.1.5",
-    "koishi": "^4.10.2",
+    "koishi": "^4.10.3",
     "koishi-plugin-gocqhttp": "^3.1.4",
     "yml-register": "^1.1.0"
   }
