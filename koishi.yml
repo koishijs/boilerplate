@@ -6,7 +6,6 @@ plugins:
   group:basic:
     help:
     rate-limit:
-    suggest:
     locales:
     commands:
     ~admin:
@@ -34,4 +33,5 @@ plugins:
     ~adapter-discord:
     ~adapter-telegram:
     ~adapter-kook:
+    ~adapter-feishu:
     gocqhttp:

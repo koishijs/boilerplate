@@ -48,6 +48,7 @@
   "dependencies": {
     "@koishijs/cli": "^4.10.4",
     "@koishijs/plugin-adapter-discord": "^3.3.2",
+    "@koishijs/plugin-adapter-feishu": "^1.0.0",
     "@koishijs/plugin-adapter-kook": "^3.4.3",
     "@koishijs/plugin-adapter-onebot": "^5.4.4",
     "@koishijs/plugin-adapter-telegram": "^3.5.2",
