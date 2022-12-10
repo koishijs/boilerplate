@@ -1,5 +1,5 @@
 FROM --platform=$BUILDPLATFORM alpine
-ARG REPO
+ARG LINK
 ARG TARGETPLATFORM
 COPY ./setup.sh /setup.sh
 RUN /setup.sh

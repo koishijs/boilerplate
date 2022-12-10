@@ -24,19 +24,22 @@ jobs:
           DOCKER_REPO: koishijs/koishi
           GITHUB_REPO: ${{ github.repository }}
         run: |
+          TAG=$(curl "https://api.github.com/repos/${GITHUB_REPO}/releases/latest" | jq -r '.tag_name')
+          NAME=$(cat package.json | jq -r '.name' | sed -E 's/.+\///')
+          LINK="https://github.com/${GITHUB_REPO}/releases/download/$TAG/$NAME-$TAG-linux-"
           docker buildx build \
-            --build-arg REPO=$GITHUB_REPO \
+            --build-arg LINK=$LINK \
             --output "type=image,push=true" \
             --platform linux/amd64,linux/arm64 \
-            --tag ${DOCKER_REPO}:${GITHUB_REF#refs/tags/} \
+            --tag ${DOCKER_REPO}:$TAG \
             --tag ${DOCKER_REPO}:latest \
             --file ./docker/Dockerfile \
             ./docker
           docker buildx build \
-            --build-arg REPO=$GITHUB_REPO \
+            --build-arg LINK=$LINK \
             --output "type=image,push=true" \
             --platform linux/amd64,linux/arm64 \
-            --tag ${DOCKER_REPO}:${GITHUB_REF#refs/tags/}-puppeteer \
+            --tag ${DOCKER_REPO}:$TAG-puppeteer \
             --tag ${DOCKER_REPO}:latest-puppeteer \
             --file ./docker/Dockerfile.puppeteer \
             ./docker
