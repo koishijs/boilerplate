@@ -11,11 +11,9 @@ cat package.json | jq '.version="0.0.0" | del(.optionalDependencies)' > package.
 mv -f package.json.tmp package.json
 
 # modify workflows
-rm -r docker/
 cd .github/workflows
 rm sync.sh
 rm sync.yml
-rm docker.yml
 
 sed -i tag.yml \
 -e 's/develop/master/g'
