@@ -1,6 +1,6 @@
 {
   "name": "@koishijs/boilerplate",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "private": true,
   "files": [
     ".env",
@@ -24,7 +24,7 @@
     "start": "koishi start -r yml-register"
   },
   "devDependencies": {
-    "@koishijs/client": "^4.7.2",
+    "@koishijs/client": "^4.7.5",
     "@koishijs/scripts": "^3.3.0",
     "@types/node": "^18.11.9",
     "cross-env": "^7.0.3",
@@ -56,19 +56,19 @@
     "@koishijs/plugin-auth": "^2.4.0",
     "@koishijs/plugin-bind": "^1.3.2",
     "@koishijs/plugin-commands": "^2.2.0",
-    "@koishijs/plugin-console": "^4.7.2",
+    "@koishijs/plugin-console": "^4.7.5",
     "@koishijs/plugin-database-sqlite": "^3.0.3",
     "@koishijs/plugin-dataview": "^2.1.7",
     "@koishijs/plugin-help": "^2.0.0",
     "@koishijs/plugin-insight": "^3.1.8",
     "@koishijs/plugin-locales": "^1.0.3",
     "@koishijs/plugin-logger": "^2.1.7",
-    "@koishijs/plugin-market": "^1.5.3",
+    "@koishijs/plugin-market": "^1.5.4",
     "@koishijs/plugin-rate-limit": "^1.2.4",
     "@koishijs/plugin-sandbox": "^2.4.1",
     "@koishijs/plugin-status": "^6.1.6",
     "koishi": "^4.10.5",
-    "koishi-plugin-gocqhttp": "^3.1.4",
+    "koishi-plugin-gocqhttp": "^3.1.7",
     "yml-register": "^1.1.0"
   }
 }
