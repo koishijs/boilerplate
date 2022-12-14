@@ -1,6 +1,6 @@
 {
   "name": "@koishijs/boilerplate",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "private": true,
   "files": [
     ".env",
@@ -29,7 +29,7 @@
     "@types/node": "^18.11.9",
     "cross-env": "^7.0.3",
     "esbuild": "^0.14.54",
-    "esbuild-register": "^3.4.1",
+    "esbuild-register": "npm:@shigma/esbuild-register@^1.1.1",
     "typescript": "^4.9.3",
     "yakumo": "^0.3.7",
     "yakumo-esbuild": "^0.3.19",
