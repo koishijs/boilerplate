@@ -1,6 +1,6 @@
 {
   "name": "@koishijs/boilerplate",
-  "version": "1.4.7",
+  "version": "1.5.0",
   "private": true,
   "files": [
     ".env",
@@ -24,7 +24,7 @@
     "start": "koishi start"
   },
   "devDependencies": {
-    "@koishijs/client": "^5.0.0",
+    "@koishijs/client": "^5.0.2",
     "@koishijs/scripts": "^3.4.0",
     "@types/node": "^18.11.17",
     "cross-env": "^7.0.3",
@@ -42,33 +42,33 @@
     "yml-register": "^1.1.0"
   },
   "optionalDependencies": {
-    "@koishijs/plugin-database-mongo": "^4.0.4",
-    "@koishijs/plugin-database-mysql": "^5.0.4",
+    "@koishijs/plugin-database-mongo": "^4.2.1",
+    "@koishijs/plugin-database-mysql": "^5.2.0",
     "@koishijs/plugin-forward": "^2.3.0"
   },
   "dependencies": {
-    "@koishijs/cli": "^4.10.10",
-    "@koishijs/plugin-adapter-discord": "^3.3.2",
+    "@koishijs/plugin-adapter-discord": "^3.3.3",
     "@koishijs/plugin-adapter-feishu": "^1.0.0",
     "@koishijs/plugin-adapter-kook": "^3.4.4",
     "@koishijs/plugin-adapter-onebot": "^5.4.4",
-    "@koishijs/plugin-adapter-telegram": "^3.5.3",
+    "@koishijs/plugin-adapter-telegram": "^3.5.4",
     "@koishijs/plugin-admin": "^1.1.5",
     "@koishijs/plugin-auth": "^2.5.0",
     "@koishijs/plugin-bind": "^1.3.2",
     "@koishijs/plugin-commands": "^2.3.0",
-    "@koishijs/plugin-console": "^5.0.0",
-    "@koishijs/plugin-database-sqlite": "^3.0.4",
+    "@koishijs/plugin-console": "^5.0.2",
+    "@koishijs/plugin-database-sqlite": "^3.2.0",
     "@koishijs/plugin-dataview": "^2.2.0",
     "@koishijs/plugin-help": "^2.0.0",
     "@koishijs/plugin-insight": "^3.2.0",
     "@koishijs/plugin-locales": "^2.1.0",
     "@koishijs/plugin-logger": "^2.2.0",
-    "@koishijs/plugin-market": "^1.6.1",
+    "@koishijs/plugin-market": "^1.7.0",
     "@koishijs/plugin-rate-limit": "^1.2.4",
     "@koishijs/plugin-sandbox": "^2.5.0",
     "@koishijs/plugin-status": "^6.2.0",
-    "koishi": "^4.10.10",
+    "koishi": "^4.11.0",
+    "koishi-plugin-desktop": "^0.0.3",
     "koishi-plugin-gocqhttp": "^3.2.0",
     "koishi-plugin-puppeteer": "^3.3.0"
   }

@@ -24,6 +24,8 @@ plugins:
     sandbox:
     status:
     ~auth:
+    desktop:
+      $if: env.KOISHI_AGENT?.includes('Desktop')
   group:database:
     database-sqlite:
     ~database-mysql:
