@@ -11,9 +11,13 @@ plugins:
     ~admin:
     ~bind:
   group:console:
+    analytics:
+    ~auth:
     console:
       open: true
     dataview:
+    desktop:
+      $if: env.KOISHI_AGENT?.includes('Desktop')
     logger:
     insight:
     market:
@@ -23,9 +27,6 @@ plugins:
         endpoint: https://registry.koishi.chat/index.json
     sandbox:
     status:
-    ~auth:
-    desktop:
-      $if: env.KOISHI_AGENT?.includes('Desktop')
   group:database:
     database-sqlite:
     ~database-mysql:
