@@ -12,7 +12,6 @@ plugins:
     ~bind:
   group:console:
     analytics:
-    ~auth:
     console:
       open: true
     dataview:
@@ -31,6 +30,7 @@ plugins:
     database-sqlite:
     ~database-mysql:
     ~database-mongo:
+    assets-local:
   group:adapter:
     ~adapter-onebot:
     ~adapter-discord:
