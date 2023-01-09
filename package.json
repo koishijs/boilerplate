@@ -1,6 +1,6 @@
 {
   "name": "@koishijs/boilerplate",
-  "version": "1.5.1",
+  "version": "1.5.2",
   "private": true,
   "files": [
     ".env",
@@ -42,7 +42,8 @@
     "yml-register": "^1.1.0"
   },
   "optionalDependencies": {
-    "@koishijs/plugin-forward": "^2.3.0"
+    "koishi-plugin-forward": "^4.0.1",
+    "koishi-plugin-respondent": "^7.0.0"
   },
   "dependencies": {
     "@koishijs/plugin-adapter-discord": "^3.4.1",
