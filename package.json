@@ -1,6 +1,6 @@
 {
   "name": "@koishijs/boilerplate",
-  "version": "1.5.3",
+  "version": "1.5.4",
   "private": true,
   "files": [
     ".env",
@@ -69,7 +69,7 @@
     "koishi": "^4.11.2",
     "koishi-plugin-assets-local": "^3.0.0",
     "koishi-plugin-desktop": "^0.0.3",
-    "koishi-plugin-gocqhttp": "^3.2.1",
+    "koishi-plugin-gocqhttp": "^3.3.0",
     "koishi-plugin-puppeteer": "^3.3.0"
   }
 }
