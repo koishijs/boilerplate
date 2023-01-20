@@ -1,6 +1,7 @@
 lib
 dist
 accounts
+external
 
 node_modules
 npm-debug.log
