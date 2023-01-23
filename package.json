@@ -20,7 +20,7 @@
     "plugins/@*/*"
   ],
   "scripts": {
-    "preinstall": "yakumo preinstall || true",
+    "preinstall": "yakumo preinstall || exit 0",
     "new": "koishi-scripts new",
     "setup": "koishi-scripts setup",
     "build": "yakumo build",
@@ -74,9 +74,9 @@
     "@koishijs/plugin-sandbox": "^2.6.1",
     "@koishijs/plugin-status": "^7.0.1",
     "koishi": "^4.11.3",
-    "koishi-plugin-assets-local": "^3.0.0",
+    "koishi-plugin-assets-local": "^3.0.1",
     "koishi-plugin-desktop": "^0.0.3",
     "koishi-plugin-gocqhttp": "^3.3.1",
-    "koishi-plugin-puppeteer": "^3.3.0"
+    "koishi-plugin-puppeteer": "^3.4.0"
   }
 }
