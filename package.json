@@ -20,7 +20,6 @@
     "plugins/@*/*"
   ],
   "scripts": {
-    "preinstall": "yakumo preinstall || exit 0",
     "new": "koishi-scripts new",
     "setup": "koishi-scripts setup",
     "build": "yakumo build",
