@@ -12,6 +12,29 @@
         "plugins/*/src",
       ],
 
+      "@koishijs/plugin-adapter-*": ["external/koishi/plugins/adapter/*/src"],
+      "@koishijs/plugin-database-*": ["external/koishi/plugins/database/*/src"],
+
+      "@koishijs/plugin-*": [
+        "external/console/packages/*/src",
+        "external/koishi/plugins/a11y/*/src",
+        "external/koishi/plugins/common/*/src",
+        "external/koishi/plugins/*/src",
+      ],
+
+      "@koishijs/*": [
+        "external/console/packages/*/src",
+        "external/koishi/packages/*/src",
+        "external/*/packages/core/src",
+      ],
+
+      "@minatojs/*": ["external/minato/packages/*/src"],
+      "@minatojs/driver-*": ["external/minato/packages/*/src"],
+      "@satorijs/adapter-*": ["external/satori/adapters/*/src"],
+      "@satorijs/*": ["external/satori/packages/*/src"],
+      "koishi": ["external/koishi/packages/koishi/src"],
+      "minato": ["external/minato/packages/minato/src"],
+
       // If you are publishing scoped plugins, just uncomment the next line
       // and change `@scope` to your npm account or organization name:
       // "@scope/koishi-plugin-*": ["plugins/*/src"],
