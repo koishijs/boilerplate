@@ -13,8 +13,17 @@ jobs:
       - name: Check out
         uses: actions/checkout@v3
 
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          registry-url: https://registry.npmjs.org/
+
       - name: Sync files
         run: bash .github/workflows/sync.sh
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GITHUB_SHA: ${{ github.sha }}
 
       - name: Deploy master
         uses: peaceiris/actions-gh-pages@v3
