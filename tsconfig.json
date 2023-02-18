@@ -3,6 +3,14 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
+      // If you are developing a plugin monorepo with custom prefix,
+      // just copy the next line and change `assets` to the prefix.
+      // Below are some examples for common prefixed plugins.
+      // See: https://github.com/koishijs/assets
+      "koishi-plugin-assets-*": ["external/assets/packages/*/src"],
+      "koishi-plugin-cache-*": ["external/cache/packages/*/src"],
+      "koishi-plugin-dialogue-*": ["external/dialogue/packages/*/src"],
+
       // The `external` directory is used to store created plugins.
       // Try `npm run setup` or `yarn setup` to create a new plugin.
       "koishi-plugin-*": [
@@ -12,18 +20,10 @@
         "plugins/*/src",
       ],
 
-      // If you are developing a plugin monorepo with custom prefix,
-      // just copy the next line and change `assets` to the prefix.
-      // Below are some examples for common prefixed plugins.
-      // See: https://github.com/koishijs/assets
-      "koishi-plugin-assets-*": ["external/assets/packages/*/src"],
-      "koishi-plugin-cache-*": ["external/cache/packages/*/src"],
-      "koishi-plugin-dialogue-*": ["external/dialogue/packages/*/src"],
-
       // If you are developing a scoped plugin,
       // just uncomment the next line and change `@scope`
       // to the scope name (i.e. npm account or organization).
-      // "@scope/koishi-plugin-*": ["external/@scope/*/src"],
+      // "@scope/koishi-plugin-*": ["external/*/src"],
 
       // Below are links for koishi internal packages.
       // You only need them when you are developing koishi itself.
