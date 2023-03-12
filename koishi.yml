@@ -37,3 +37,7 @@ plugins:
     ~adapter-kook: {}
     ~adapter-feishu: {}
     gocqhttp: {}
+  group:develop:
+    hmr:
+      $if: env.KOISHI_WATCH_ROOT
+      root: ${{ env.KOISHI_WATCH_ROOT }}
