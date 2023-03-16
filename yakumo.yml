@@ -14,3 +14,5 @@ pipeline:
     - tsc
     - esbuild
     - client
+  clean:
+    - tsc --clean

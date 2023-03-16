@@ -11,6 +11,7 @@ plugins:
     ~bind: {}
   group:console:
     analytics: {}
+    ~auth: {}
     console:
       open: true
     dataview: {}
