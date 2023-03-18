@@ -3,21 +3,22 @@ maxPort: 5149
 
 plugins:
   group:basic:
-    help: {}
-    rate-limit: {}
-    locales: {}
-    commands: {}
     ~admin: {}
     ~bind: {}
+    commands: {}
+    help: {}
+    ~inspect: {}
+    locales: {}
+    rate-limit: {}
   group:console:
     analytics: {}
-    ~auth: {}
     console:
       open: true
     dataview: {}
     desktop:
       $if: env.KOISHI_AGENT?.includes('Desktop')
     logger: {}
+    ~login: {}
     insight: {}
     market:
       registry:
@@ -26,7 +27,7 @@ plugins:
         endpoint: https://registry.koishi.chat/index.json
     sandbox: {}
     status: {}
-  group:database:
+  group:storage:
     database-sqlite: {}
     ~database-mysql: {}
     ~database-mongo: {}
@@ -39,6 +40,6 @@ plugins:
     ~adapter-feishu: {}
     gocqhttp: {}
   group:develop:
+    $if: env.NODE_ENV === 'development'
     hmr:
-      $if: env.KOISHI_WATCH_ROOT
-      root: ${{ env.KOISHI_WATCH_ROOT }}
+      root: '.'
