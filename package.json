@@ -1,6 +1,6 @@
 {
   "name": "@koishijs/boilerplate",
-  "version": "1.6.4",
+  "version": "1.6.5",
   "private": true,
   "files": [
     ".env",
@@ -60,14 +60,14 @@
   },
   "dependencies": {
     "@koishijs/plugin-adapter-discord": "^3.5.7",
-    "@koishijs/plugin-adapter-feishu": "^1.2.2",
+    "@koishijs/plugin-adapter-feishu": "^1.2.3",
     "@koishijs/plugin-adapter-kook": "^3.6.2",
     "@koishijs/plugin-adapter-onebot": "^5.6.2",
     "@koishijs/plugin-adapter-telegram": "^3.7.0",
     "@koishijs/plugin-admin": "^1.2.1",
     "@koishijs/plugin-analytics": "^1.0.3",
     "@koishijs/plugin-bind": "^1.4.1",
-    "@koishijs/plugin-commands": "^3.0.1",
+    "@koishijs/plugin-commands": "^3.1.1",
     "@koishijs/plugin-console": "^5.5.5",
     "@koishijs/plugin-database-sqlite": "^3.4.1",
     "@koishijs/plugin-dataview": "^2.2.6",
@@ -84,7 +84,7 @@
     "koishi": "^4.12.1",
     "koishi-plugin-assets-local": "^3.0.3",
     "koishi-plugin-desktop": "^0.0.3",
-    "koishi-plugin-gocqhttp": "^3.4.0",
+    "koishi-plugin-gocqhttp": "^3.4.4",
     "koishi-plugin-puppeteer": "^3.4.11"
   }
 }

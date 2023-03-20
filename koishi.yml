@@ -38,7 +38,8 @@ plugins:
     ~adapter-telegram: {}
     ~adapter-kook: {}
     ~adapter-feishu: {}
-    gocqhttp: {}
+    gocqhttp:
+      signServer: https://captcha.koishi.xyz/sdk/dandelion/energy
   group:develop:
     $if: env.NODE_ENV === 'development'
     hmr:
