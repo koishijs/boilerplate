@@ -38,8 +38,8 @@
   "devDependencies": {
     "@koishijs/client": "^5.5.5",
     "@koishijs/plugin-hmr": "^1.1.0",
-    "@koishijs/scripts": "^4.1.3",
-    "@types/node": "^18.14.2",
+    "@koishijs/scripts": "^4.1.4",
+    "@types/node": "^18.15.3",
     "cross-env": "^7.0.3",
     "esbuild": "^0.17.10",
     "esbuild-register": "npm:@shigma/esbuild-register@^1.1.1",
@@ -53,10 +53,6 @@
     "yakumo-upgrade": "^0.3.3",
     "yakumo-version": "^0.3.4",
     "yml-register": "^1.1.0"
-  },
-  "optionalDependencies": {
-    "koishi-plugin-forward": "^4.0.1",
-    "koishi-plugin-respondent": "^6.0.0"
   },
   "dependencies": {
     "@koishijs/plugin-adapter-discord": "^3.5.7",
@@ -77,14 +73,14 @@
     "@koishijs/plugin-locales": "^2.2.4",
     "@koishijs/plugin-logger": "^2.2.3",
     "@koishijs/plugin-login": "^3.1.0",
-    "@koishijs/plugin-market": "^1.12.3",
+    "@koishijs/plugin-market": "^1.12.4",
     "@koishijs/plugin-rate-limit": "^1.3.2",
     "@koishijs/plugin-sandbox": "^2.7.1",
     "@koishijs/plugin-status": "^7.1.2",
     "koishi": "^4.12.1",
     "koishi-plugin-assets-local": "^3.0.3",
     "koishi-plugin-desktop": "^0.0.3",
-    "koishi-plugin-gocqhttp": "^3.4.4",
+    "koishi-plugin-gocqhttp": "^3.4.5",
     "koishi-plugin-puppeteer": "^3.4.11"
   }
 }
