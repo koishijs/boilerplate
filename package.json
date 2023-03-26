@@ -1,6 +1,6 @@
 {
   "name": "@koishijs/boilerplate",
-  "version": "1.6.5",
+  "version": "1.6.6",
   "private": true,
   "files": [
     ".env",
@@ -36,12 +36,12 @@
     "start": "koishi start"
   },
   "devDependencies": {
-    "@koishijs/client": "^5.5.5",
-    "@koishijs/plugin-hmr": "^1.1.0",
+    "@koishijs/client": "^5.5.6",
+    "@koishijs/plugin-hmr": "^1.1.1",
     "@koishijs/scripts": "^4.1.4",
     "@types/node": "^18.15.3",
     "cross-env": "^7.0.3",
-    "esbuild": "^0.17.10",
+    "esbuild": "^0.17.12",
     "esbuild-register": "npm:@shigma/esbuild-register@^1.1.1",
     "typescript": "^4.9.5",
     "yakumo": "^0.3.10",
@@ -56,18 +56,18 @@
   },
   "dependencies": {
     "@koishijs/plugin-adapter-discord": "^3.5.7",
-    "@koishijs/plugin-adapter-feishu": "^1.2.3",
-    "@koishijs/plugin-adapter-kook": "^3.6.2",
-    "@koishijs/plugin-adapter-onebot": "^5.6.2",
-    "@koishijs/plugin-adapter-telegram": "^3.7.0",
+    "@koishijs/plugin-adapter-lark": "^2.0.1",
+    "@koishijs/plugin-adapter-kook": "^3.6.4",
+    "@koishijs/plugin-adapter-onebot": "^5.6.4",
+    "@koishijs/plugin-adapter-telegram": "^3.7.1",
     "@koishijs/plugin-admin": "^1.2.1",
     "@koishijs/plugin-analytics": "^1.0.3",
     "@koishijs/plugin-bind": "^1.4.1",
     "@koishijs/plugin-commands": "^3.1.1",
-    "@koishijs/plugin-console": "^5.5.5",
+    "@koishijs/plugin-console": "^5.5.6",
     "@koishijs/plugin-database-sqlite": "^3.4.1",
     "@koishijs/plugin-dataview": "^2.2.6",
-    "@koishijs/plugin-help": "^2.2.1",
+    "@koishijs/plugin-help": "^2.2.2",
     "@koishijs/plugin-insight": "^3.3.3",
     "@koishijs/plugin-inspect": "^1.1.0",
     "@koishijs/plugin-locales": "^2.2.4",
@@ -77,10 +77,10 @@
     "@koishijs/plugin-rate-limit": "^1.3.2",
     "@koishijs/plugin-sandbox": "^2.7.1",
     "@koishijs/plugin-status": "^7.1.2",
-    "koishi": "^4.12.1",
+    "koishi": "^4.12.2",
     "koishi-plugin-assets-local": "^3.0.3",
     "koishi-plugin-desktop": "^0.0.3",
-    "koishi-plugin-gocqhttp": "^3.4.5",
-    "koishi-plugin-puppeteer": "^3.4.11"
+    "koishi-plugin-gocqhttp": "^3.4.6",
+    "koishi-plugin-puppeteer": "^3.5.0"
   }
 }

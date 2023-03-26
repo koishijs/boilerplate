@@ -37,7 +37,7 @@ plugins:
     ~adapter-discord: {}
     ~adapter-telegram: {}
     ~adapter-kook: {}
-    ~adapter-feishu: {}
+    ~adapter-lark: {}
     gocqhttp:
       signServer: https://captcha.koishi.xyz/sdk/dandelion/energy
   group:develop:
