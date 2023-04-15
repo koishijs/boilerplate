@@ -81,7 +81,7 @@
     "koishi": "^4.12.4",
     "koishi-plugin-assets-local": "^3.0.3",
     "koishi-plugin-desktop": "^0.0.3",
-    "koishi-plugin-gocqhttp": "^3.4.6",
+    "koishi-plugin-gocqhttp": "^3.5.0",
     "koishi-plugin-puppeteer": "^3.5.0"
   }
 }
