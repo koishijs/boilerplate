@@ -45,3 +45,7 @@ plugins:
     $if: env.NODE_ENV === 'development'
     hmr:
       root: '.'
+      ignored:
+        - '**/node_modules/**'
+        - '**/.git/**'
+        - '**/logs/**'
