@@ -16,7 +16,7 @@ jobs:
             platform: windows
           - runs-on: windows-latest
             platform: windows
-            node: 12
+            node: 14
           - runs-on: ubuntu-latest
             platform: linux
           - runs-on: ubuntu-latest
@@ -37,7 +37,7 @@ jobs:
 
       - name: Install nix (for arm64)
         if: ${{ matrix.target.emulate }}
-        uses: cachix/install-nix-action@v15
+        uses: cachix/install-nix-action@v20
 
       - name: Set up qemu and binfmt (for arm64)
         if: ${{ matrix.target.emulate }}
@@ -52,7 +52,7 @@ jobs:
 
       - name: Set up Node
         if: ${{ !matrix.target.emulate }}
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: ${{ steps.vars.outputs.NODE_VERSION }}
 
@@ -80,8 +80,19 @@ jobs:
         shell: bash
         run: >
           bash .github/workflows/upload.sh
-          '${{ github.repository }}'
           '${{ matrix.target.platform }}-${{ steps.vars.outputs.ARCH }}-node${{ steps.vars.outputs.NODE_VERSION }}'
-          '${{ toJSON(github.event.release) }}'
         env:
-          TOKEN: ${{ secrets.WORKFLOW_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.WORKFLOW_TOKEN }}
+
+  docker:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Check out
+        uses: actions/checkout@v3
+      - name: Trigger docker build
+        env:
+          DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+          GITHUB_TOKEN: ${{ secrets.WORKFLOW_TOKEN }}
+        if: ${{ env.DOCKER_USERNAME != null}}
+        run: gh workflow run Docker
