@@ -21,6 +21,7 @@ plugins:
     logger: {}
     ~login: {}
     insight: {}
+    config: {}
     market:
       registry:
         endpoint: https://registry.npmmirror.com
