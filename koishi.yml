@@ -29,6 +29,7 @@ plugins:
         endpoint: https://registry.koishi.chat/index.json
     sandbox: {}
     status: {}
+    theme-vanilla: {}
   group:storage:
     database-sqlite: {}
     ~database-mysql: {}
