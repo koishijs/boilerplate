@@ -12,8 +12,12 @@ mv -f package.json.tmp package.json
 
 # modify workflows
 cd .github/workflows
+rm publish.sh
 rm sync.sh
 rm sync.yml
 
 sed -i tag.yml \
+-e 's/develop/master/g'
+
+sed -i build.yml \
 -e 's/develop/master/g'

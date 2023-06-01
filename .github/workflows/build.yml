@@ -94,5 +94,5 @@ jobs:
         env:
           DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
           GITHUB_TOKEN: ${{ secrets.WORKFLOW_TOKEN }}
-        if: ${{ env.DOCKER_USERNAME != null}}
+        if: ${{ env.DOCKER_USERNAME != null }}
         run: gh workflow run Docker
