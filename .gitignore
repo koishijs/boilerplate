@@ -1,6 +1,6 @@
 lib
 dist
-accounts
+data
 external
 
 yarn.lock
