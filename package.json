@@ -67,7 +67,7 @@
     "@koishijs/plugin-auth": "^4.0.0",
     "@koishijs/plugin-bind": "^1.4.2",
     "@koishijs/plugin-commands": "^3.2.2",
-    "@koishijs/plugin-config": "^2.2.0",
+    "@koishijs/plugin-config": "^2.2.1",
     "@koishijs/plugin-console": "^5.11.6",
     "@koishijs/plugin-database-sqlite": "^3.5.6",
     "@koishijs/plugin-dataview": "^2.3.1",
