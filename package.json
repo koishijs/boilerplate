@@ -87,5 +87,8 @@
     "koishi-plugin-gocqhttp": "^3.8.0",
     "koishi-plugin-puppeteer": "^3.5.0",
     "koishi-plugin-theme-vanilla": "^1.0.6"
+  },
+  "engines": {
+    "node": ">=16.13.0"
   }
 }
