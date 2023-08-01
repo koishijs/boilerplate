@@ -14,13 +14,26 @@ jobs:
         target:
           - runs-on: windows-latest
             platform: windows
+          - runs-on: windows-latest
+            platform: windows
+            node: 18
           - runs-on: ubuntu-latest
             platform: linux
+          - runs-on: ubuntu-latest
+            platform: linux
+            node: 18
           - runs-on: ubuntu-latest
             platform: linux
             emulate: arm64
+          - runs-on: ubuntu-latest
+            platform: linux
+            node: 18
+            emulate: arm64
           - runs-on: macos-latest
             platform: darwin
+          - runs-on: macos-latest
+            platform: darwin
+            node: 18
 
     runs-on: ${{ matrix.target.runs-on }}
 
@@ -45,7 +58,7 @@ jobs:
       - name: Check out
         uses: actions/checkout@v3
         with:
-          ref: develop
+          ref: master
 
       - name: Set up Node
         if: ${{ !matrix.target.emulate }}
