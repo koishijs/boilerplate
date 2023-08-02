@@ -1,6 +1,6 @@
 {
   "name": "@koishijs/boilerplate",
-  "version": "1.8.0",
+  "version": "1.8.1",
   "private": true,
   "files": [
     ".env",
@@ -38,7 +38,7 @@
     "start": "koishi start"
   },
   "devDependencies": {
-    "@koishijs/client": "^5.13.0",
+    "@koishijs/client": "^5.13.1",
     "@koishijs/plugin-hmr": "^1.2.1",
     "@koishijs/scripts": "^4.2.0",
     "@types/node": "^20.4.2",
@@ -68,7 +68,7 @@
     "@koishijs/plugin-bind": "^1.4.2",
     "@koishijs/plugin-commands": "^3.2.2",
     "@koishijs/plugin-config": "^2.3.0",
-    "@koishijs/plugin-console": "^5.13.0",
+    "@koishijs/plugin-console": "^5.13.1",
     "@koishijs/plugin-database-sqlite": "^3.5.6",
     "@koishijs/plugin-dataview": "^2.3.1",
     "@koishijs/plugin-explorer": "^1.4.5",
