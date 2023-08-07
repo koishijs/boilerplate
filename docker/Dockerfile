@@ -7,7 +7,8 @@ RUN /setup.sh
 FROM node:lts-alpine
 COPY --from=0 /boilerplate.zip /boilerplate.zip
 COPY ./entrypoint.sh /
-RUN apk add --no-cache chromium nss freetype harfbuzz ca-certificates ttf-freefont font-noto-cjk
+RUN apk add --no-cache chromium nss freetype harfbuzz ca-certificates ttf-freefont font-noto-cjk && \
+    yarn set version berry
 VOLUME ["/koishi"]
 WORKDIR "/koishi"
 ENTRYPOINT ["/entrypoint.sh"]
