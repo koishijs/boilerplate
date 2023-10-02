@@ -41,7 +41,9 @@ plugins:
     ~adapter-lark: {}
     ~adapter-line: {}
     ~adapter-matrix: {}
-    ~adapter-onebot: {}
+    ~adapter-qq: {}
+    ~adapter-satori: {}
+    ~adapter-slack: {}
     ~adapter-telegram: {}
   group:develop:
     $if: env.NODE_ENV === 'development'
