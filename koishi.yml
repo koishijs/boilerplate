@@ -45,6 +45,7 @@ plugins:
     ~adapter-satori: {}
     ~adapter-slack: {}
     ~adapter-telegram: {}
+    ~server: {}
   group:develop:
     $if: env.NODE_ENV === 'development'
     hmr:
