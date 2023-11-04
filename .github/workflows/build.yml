@@ -86,7 +86,7 @@ jobs:
     needs: build
     steps:
       - name: Check out
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Trigger docker build
         env:
           DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
