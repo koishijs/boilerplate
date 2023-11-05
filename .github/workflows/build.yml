@@ -56,7 +56,7 @@ jobs:
       - name: Set up Node (for arm64)
         if: ${{ matrix.target.emulate == 'arm64' }}
         run: |
-          nix profile install github:NixOS/nixpkgs/7dc71aef32e8faf065cb171700792cf8a65c152d#nodejs-${{ steps.vars.outputs.NODE_VERSION }}_x --option system aarch64-linux
+          nix profile install github:NixOS/nixpkgs/04719f0326c5f8084f1fc7d1ca3fb15f8f09bb5e#nodejs_${{ steps.vars.outputs.NODE_VERSION }} --option system aarch64-linux
 
       - name: Install zip (for windows)
         if: ${{ matrix.target.platform == 'windows' }}
