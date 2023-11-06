@@ -38,7 +38,7 @@
     "start": "koishi start"
   },
   "devDependencies": {
-    "@koishijs/client": "^5.18.3",
+    "@koishijs/client": "^5.18.4",
     "@koishijs/plugin-hmr": "^1.2.4",
     "@koishijs/scripts": "^4.5.0",
     "@types/node": "^20.8.9",
@@ -58,7 +58,7 @@
   },
   "dependencies": {
     "@koishijs/plugin-adapter-discord": "^4.1.4",
-    "@koishijs/plugin-adapter-kook": "^4.1.3",
+    "@koishijs/plugin-adapter-kook": "^4.2.0",
     "@koishijs/plugin-adapter-lark": "^3.1.5",
     "@koishijs/plugin-adapter-line": "^2.1.3",
     "@koishijs/plugin-adapter-matrix": "^4.0.4",
@@ -72,7 +72,7 @@
     "@koishijs/plugin-bind": "^1.4.4",
     "@koishijs/plugin-commands": "^3.4.3",
     "@koishijs/plugin-config": "^2.4.5",
-    "@koishijs/plugin-console": "^5.18.3",
+    "@koishijs/plugin-console": "^5.18.4",
     "@koishijs/plugin-database-sqlite": "^3.6.3",
     "@koishijs/plugin-explorer": "^1.5.0",
     "@koishijs/plugin-help": "^2.3.3",
@@ -83,7 +83,7 @@
     "@koishijs/plugin-market": "^2.4.2",
     "@koishijs/plugin-sandbox": "^3.2.2",
     "@koishijs/plugin-server": "^2.2.2",
-    "@koishijs/plugin-status": "^7.2.4",
+    "@koishijs/plugin-status": "^7.2.5",
     "koishi": "^4.15.4",
     "koishi-plugin-assets-local": "^3.1.2",
     "koishi-plugin-dataview": "^2.4.0",
