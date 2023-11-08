@@ -1,6 +1,7 @@
 {
   "name": "@koishijs/boilerplate",
   "version": "1.11.2",
+  "packageManager": "yarn@4.0.1",
   "private": true,
   "files": [
     ".env",
