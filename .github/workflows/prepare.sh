@@ -1,8 +1,3 @@
-# set up yarn
-echo 'nodeLinker: node-modules' >> .yarnrc.yml
-echo 'npmRegistryServer: https://registry.npmmirror.com' >> .yarnrc.yml
-echo 'npmPublishRegistry: https://registry.yarnpkg.com' >> .yarnrc.yml
-
 # remove ^ from package.json
 # do not use sed -i, it behaves differently on Linux and MacOS
 cat package.json | sed 's/\^//g' > package.json.tmp

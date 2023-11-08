@@ -3,6 +3,14 @@ dist
 data
 external
 
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
 yarn.lock
 package-lock.json
 pnpm-lock.yaml
