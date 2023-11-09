@@ -1,6 +1,6 @@
 {
   "name": "@koishijs/boilerplate",
-  "version": "1.11.2",
+  "version": "1.11.3",
   "packageManager": "yarn@4.0.1",
   "private": true,
   "files": [
@@ -63,7 +63,7 @@
     "@koishijs/plugin-adapter-lark": "^3.1.5",
     "@koishijs/plugin-adapter-line": "^2.1.3",
     "@koishijs/plugin-adapter-matrix": "^4.0.4",
-    "@koishijs/plugin-adapter-qq": "^4.1.3",
+    "@koishijs/plugin-adapter-qq": "^4.1.5",
     "@koishijs/plugin-adapter-satori": "^1.0.1",
     "@koishijs/plugin-adapter-slack": "^2.0.4",
     "@koishijs/plugin-adapter-telegram": "^4.1.6",
