@@ -12,6 +12,7 @@ plugins:
     rate-limit: {}
     telemetry: {}
   group:console:
+    actions: {}
     analytics: {}
     ~auth: {}
     config: {}
@@ -28,6 +29,7 @@ plugins:
         endpoint: https://registry.npmmirror.com
       search:
         endpoint: https://registry.koishi.chat/index.json
+    oobe: {}
     sandbox: {}
     status: {}
     theme-vanilla: {}
