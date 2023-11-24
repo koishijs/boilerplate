@@ -1,6 +1,7 @@
 mkdir -p $RUNNER_TEMP/dist
 cp -a * $RUNNER_TEMP/dist
 cp -a .github $RUNNER_TEMP/dist
+cp -a .vscode $RUNNER_TEMP/dist
 cp -a .yarn $RUNNER_TEMP/dist
 cp .* $RUNNER_TEMP/dist
 mv $RUNNER_TEMP/dist dist

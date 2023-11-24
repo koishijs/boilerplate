@@ -1,7 +1,11 @@
 lib
 dist
-data
+/cache
+/data
+/temp
 external
+
+.env.local
 
 .pnp.*
 .yarn/*
@@ -22,8 +26,6 @@ tsconfig.tsbuildinfo
 
 .eslintcache
 .DS_Store
-.idea
-.vscode
 *.suo
 *.ntvs*
 *.njsproj
