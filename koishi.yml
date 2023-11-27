@@ -25,8 +25,6 @@ plugins:
     logger: {}
     insight: {}
     market:
-      registry:
-        endpoint: https://registry.npmmirror.com
       search:
         endpoint: https://registry.koishi.chat/index.json
     oobe: {}
