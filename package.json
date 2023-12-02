@@ -1,6 +1,6 @@
 {
   "name": "@koishijs/boilerplate",
-  "version": "1.12.1",
+  "version": "1.12.2",
   "packageManager": "yarn@4.0.1",
   "private": true,
   "files": [
@@ -55,12 +55,12 @@
   },
   "dependencies": {
     "@koishijs/plugin-actions": "^0.0.2",
-    "@koishijs/plugin-adapter-discord": "^4.1.6",
-    "@koishijs/plugin-adapter-kook": "^4.2.3",
+    "@koishijs/plugin-adapter-discord": "^4.1.7",
+    "@koishijs/plugin-adapter-kook": "^4.2.4",
     "@koishijs/plugin-adapter-lark": "^3.1.6",
     "@koishijs/plugin-adapter-line": "^2.1.4",
     "@koishijs/plugin-adapter-matrix": "^4.0.5",
-    "@koishijs/plugin-adapter-qq": "^4.1.16",
+    "@koishijs/plugin-adapter-qq": "^4.2.0",
     "@koishijs/plugin-adapter-satori": "^1.0.3",
     "@koishijs/plugin-adapter-slack": "^2.0.5",
     "@koishijs/plugin-adapter-telegram": "^4.1.7",
@@ -83,7 +83,7 @@
     "@koishijs/plugin-sandbox": "^3.2.2",
     "@koishijs/plugin-server-satori": "^2.3.1",
     "@koishijs/plugin-status": "^7.2.6",
-    "koishi": "^4.15.6",
+    "koishi": "^4.15.7",
     "koishi-plugin-assets-local": "^3.2.0",
     "koishi-plugin-dataview": "^2.4.0",
     "koishi-plugin-desktop": "^0.0.4",
