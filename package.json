@@ -81,7 +81,7 @@
     "@koishijs/plugin-market": "^2.5.1",
     "@koishijs/plugin-oobe": "^0.0.2",
     "@koishijs/plugin-sandbox": "^3.2.2",
-    "@koishijs/plugin-server": "^0.1.3",
+    "@koishijs/plugin-server": "^3.1.3",
     "@koishijs/plugin-server-satori": "^2.3.1",
     "@koishijs/plugin-status": "^7.2.6",
     "koishi": "^4.16.0",
