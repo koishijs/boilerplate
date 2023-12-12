@@ -12,6 +12,9 @@ cd dist
 cat package.json | jq '.version="0.0.0" | del(.optionalDependencies)' > package.json.tmp
 mv -f package.json.tmp package.json
 
+sed -i .gitignore \
+-e '/yarn.lock/d'
+
 # modify workflows
 cd .github/workflows
 rm publish.sh
