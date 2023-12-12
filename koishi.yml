@@ -14,6 +14,8 @@ plugins:
   group:console:
     actions: {}
     analytics: {}
+    android:
+      $if: env.KOISHI_AGENT?.includes('Android')
     ~auth: {}
     config: {}
     console:
