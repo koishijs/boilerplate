@@ -1,6 +1,6 @@
 {
   "name": "@koishijs/boilerplate",
-  "version": "1.13.1",
+  "version": "1.13.2",
   "packageManager": "yarn@4.0.1",
   "private": true,
   "files": [
