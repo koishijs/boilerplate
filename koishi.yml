@@ -1,7 +1,10 @@
 plugins:
-  server:
-    port: 5140
-    maxPort: 5149
+  group:server:
+    server:
+      port: 5140
+      maxPort: 5149
+    ~server-satori: {}
+    ~server-temp: {}
   group:basic:
     ~admin: {}
     ~bind: {}
@@ -39,15 +42,21 @@ plugins:
     ~database-mongo: {}
     assets-local: {}
   group:adapter:
+    ~adapter-dingtalk: {}
     ~adapter-discord: {}
     ~adapter-kook: {}
     ~adapter-lark: {}
     ~adapter-line: {}
+    ~adapter-mail: {}
     ~adapter-matrix: {}
     ~adapter-qq: {}
     ~adapter-satori: {}
     ~adapter-slack: {}
     ~adapter-telegram: {}
+    ~adapter-wechat-official: {}
+    ~adapter-wecom: {}
+    ~adapter-whatsapp: {}
+    ~adapter-zulip: {}
   group:develop:
     $if: env.NODE_ENV === 'development'
     hmr:
