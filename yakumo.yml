@@ -8,7 +8,6 @@
       clean:
         - tsc --clean
 - name: yakumo-esbuild
-- name: yakumo-esbuild-yaml
 - name: yakumo-publish-sync
 - name: yakumo-tsc
 - name: '@koishijs/client/lib/yakumo'
