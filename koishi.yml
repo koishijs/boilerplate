@@ -32,6 +32,7 @@ plugins:
     market:
       search:
         endpoint: https://registry.koishi.chat/index.json
+    notifier: {}
     oobe: {}
     sandbox: {}
     status: {}
