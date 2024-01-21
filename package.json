@@ -35,7 +35,7 @@
     "start": "koishi start"
   },
   "devDependencies": {
-    "@koishijs/client": "^5.25.6",
+    "@koishijs/client": "^5.25.7",
     "@koishijs/plugin-hmr": "^1.2.8",
     "@koishijs/scripts": "^4.5.0",
     "@types/node": "^20.10.2",
@@ -44,10 +44,9 @@
     "esbuild": "^0.18.20",
     "esbuild-register": "npm:@shigma/esbuild-register@^1.1.1",
     "typescript": "^5.3.2",
-    "yakumo": "^1.0.0-alpha.10",
-    "yakumo-esbuild": "^1.0.0-alpha.2",
-    "yakumo-publish-sync": "^1.0.0-alpha.1",
-    "yakumo-tsc": "^1.0.0-alpha.2",
+    "yakumo": "^1.0.0-beta.2",
+    "yakumo-esbuild": "^1.0.0-beta.1",
+    "yakumo-tsc": "^1.0.0-beta.0",
     "yml-register": "^1.1.0"
   },
   "dependencies": {
@@ -63,7 +62,7 @@
     "@koishijs/plugin-bind": "^1.5.1",
     "@koishijs/plugin-commands": "^3.5.0",
     "@koishijs/plugin-config": "^2.8.2",
-    "@koishijs/plugin-console": "^5.25.6",
+    "@koishijs/plugin-console": "^5.25.7",
     "@koishijs/plugin-database-sqlite": "^3.8.4",
     "@koishijs/plugin-explorer": "^1.5.0",
     "@koishijs/plugin-help": "^2.4.3",
@@ -71,7 +70,7 @@
     "@koishijs/plugin-inspect": "^1.1.4",
     "@koishijs/plugin-locales": "^2.5.3",
     "@koishijs/plugin-logger": "^2.6.7",
-    "@koishijs/plugin-market": "^2.9.3",
+    "@koishijs/plugin-market": "^2.9.4",
     "@koishijs/plugin-notifier": "^1.1.2",
     "@koishijs/plugin-oobe": "^0.0.2",
     "@koishijs/plugin-sandbox": "^3.2.4",
