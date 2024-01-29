@@ -9,4 +9,4 @@
         - tsc --clean
 - name: yakumo-esbuild
 - name: yakumo-tsc
-- name: '@koishijs/client/lib/yakumo.js'
+- name: '@koishijs/client/lib'
