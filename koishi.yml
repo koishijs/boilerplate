@@ -38,9 +38,14 @@ plugins:
     status: {}
     theme-vanilla: {}
   group:storage:
-    database-sqlite: {}
-    ~database-mysql: {}
-    ~database-mongo: {}
+    ~database-mongo:
+      database: koishi
+    ~database-mysql:
+      database: koishi
+    ~database-postgres:
+      database: koishi
+    database-sqlite:
+      path: data/koishi.db
     assets-local: {}
   group:adapter:
     ~adapter-dingtalk: {}

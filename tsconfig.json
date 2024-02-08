@@ -33,8 +33,6 @@
       // See: https://github.com/satorijs/satori
       // See: https://github.com/shigma/minato
       "@koishijs/client/lib": ["external/webui/packages/client/src"],
-      "@koishijs/plugin-adapter-*": ["external/koishi/plugins/adapter/*/src"],
-      "@koishijs/plugin-database-*": ["external/koishi/plugins/database/*/src"],
       "@koishijs/plugin-*": [
         "external/koishi/plugins/common/*/src",
         "external/koishi/plugins/*/src",
