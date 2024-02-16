@@ -12,6 +12,7 @@ plugins:
     help: {}
     ~inspect: {}
     locales: {}
+    proxy-agent: {}
     rate-limit: {}
     telemetry: {}
   group:console:
