@@ -28,6 +28,7 @@
     "setup": "koishi-scripts setup",
     "clone": "koishi-scripts clone",
     "build": "yakumo build",
+    "clean": "yakumo clean",
     "bump": "yakumo version",
     "dep": "yakumo upgrade",
     "pub": "yakumo publish",
