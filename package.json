@@ -1,6 +1,6 @@
 {
   "name": "@koishijs/boilerplate",
-  "version": "1.14.2",
+  "version": "1.14.3",
   "packageManager": "yarn@4.1.0",
   "private": true,
   "files": [
@@ -77,7 +77,7 @@
     "@koishijs/plugin-oobe": "^0.0.2",
     "@koishijs/plugin-proxy-agent": "^0.3.0",
     "@koishijs/plugin-sandbox": "^3.2.5",
-    "@koishijs/plugin-server": "^3.2.0",
+    "@koishijs/plugin-server": "^3.2.1",
     "@koishijs/plugin-server-satori": "^2.4.3",
     "@koishijs/plugin-server-temp": "^1.4.0",
     "@koishijs/plugin-status": "^7.4.10",
