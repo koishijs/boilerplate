@@ -47,7 +47,6 @@
       "@minatojs/*": ["external/minato/packages/*/src"],
       "@satorijs/adapter-*": ["external/satori/adapters/*/src"],
       "@satorijs/*": ["external/satori/packages/*/src"],
-      "cordis-*": ["external/satori/packages/*/src"],
       "koishi": ["external/koishi/packages/koishi/src"],
       "minato": ["external/minato/packages/minato/src"],
 
