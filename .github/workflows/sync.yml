@@ -23,7 +23,7 @@ jobs:
         run: bash .github/workflows/sync.sh
 
       - name: Deploy master
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.WORKFLOW_TOKEN }}
           publish_dir: dist

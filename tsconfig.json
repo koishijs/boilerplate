@@ -31,7 +31,7 @@
       // See: https://github.com/koishijs/koishi
       // See: https://github.com/koishijs/webui
       // See: https://github.com/satorijs/satori
-      // See: https://github.com/shigma/minato
+      // See: https://github.com/cordiverse/minato
       "@koishijs/client/lib": ["external/webui/packages/client/src"],
       "@koishijs/plugin-*": [
         "external/koishi/plugins/common/*/src",
