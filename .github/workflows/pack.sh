@@ -26,4 +26,4 @@ done
 
 cd $RUNNER_TEMP/bundle
 
-zip $([[ $OSTYPE = "msys" ]] && echo "-9qr" || echo "-9qry") ../bundle.zip $(ls -A)
+zip $([[ $RUNNER_OS = "Windows" ]] && echo "-9qr" || echo "-9qry") ../bundle.zip $(ls -A)
